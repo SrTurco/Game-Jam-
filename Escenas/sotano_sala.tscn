@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://djqave45035ls"]
+
+[ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_fw0b8"]
+
+[node name="Node2D" type="Node2D" unique_id=1085568832]
+
+[node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_fw0b8")]
+position = Vector2(244, 73)

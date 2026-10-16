@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://cipgboflpfow7"]
-
-[ext_resource type="Script" uid="uid://jktq2clkxogd" path="res://Scripts/menu_inicio.gd" id="1_tsrxo"]
-
-[node name="MenuInicio" type="Node2D" unique_id=1201324041]
-script = ExtResource("1_tsrxo")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1615488668]

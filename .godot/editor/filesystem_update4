@@ -1,0 +1,6 @@
+res://Escenas/menu_inicio.tscn
+res://Scripts/playerScript.gd
+res://Escenas/cocina_sala.tscn
+res://Escenas/sala_principal.tscn
+res://Escenas/baño_sala.tscn
+res://Escenas/sotano_sala.tscn

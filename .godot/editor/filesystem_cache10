@@ -1,0 +1,10 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792192412
+icon.svg::CompressedTexture2D::1536055607697131033::1792190537::1792190577::1::::<><><>0<>0<>c429cb124f12997c7ef25b86060706f2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1792190537::0::1::::<><><>0<>0<><>::
+::res://Escenas/::1792192729
+cocina_sala.tscn::PackedScene::6489516623988334714::1792192773::0::1::::<><><>0<>0<><>::
+sala_principal.tscn::PackedScene::5365684614122833788::1792192729::0::1::::<><><>0<>0<><>::uid://jktq2clkxogd::::res://Scripts/menu_inicio.gd<>uid://ua03udkh0maf::::res://Scripts/playerScript.gd<>uid://v5cu1276vqab::::res://icon.svg
+::res://Scripts/::1792192730
+menu_inicio.gd::GDScript::653526987582066495::1792190537::0::1::::<>Node2D<><>0<>0<><>::
+playerScript.gd::GDScript::1405345855375267565::1792192730::0::1::::<>CharacterBody2D<><>0<>0<><>::

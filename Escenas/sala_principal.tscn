@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cipgboflpfow7"]
+
+[ext_resource type="Script" uid="uid://jktq2clkxogd" path="res://Scripts/menu_inicio.gd" id="1_tn55x"]
+[ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="2_mooak"]
+[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="3_l6tan"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
+radius = 96.25487
+
+[node name="MenuInicio" type="Node2D" unique_id=1201324041]
+script = ExtResource("1_tn55x")
+
+[node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("2_mooak")]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1553559977]
+position = Vector2(779, 274)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1102618403]
+shape = SubResource("CircleShape2D_44saq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1931158594]
+texture = ExtResource("3_l6tan")
+
+[node name="label" type="Label" parent="." unique_id=1198833265]
+visible = false
+offset_left = 631.0
+offset_top = 930.0
+offset_right = 1222.0
+offset_bottom = 979.0
+theme_override_font_sizes/font_size = 35
+text = "Presionar \"Tecla\" para interacturar"
+
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="player_collision_with_object"]
+[connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="player_quit_collision_area"]
