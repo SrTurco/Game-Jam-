@@ -4,3 +4,5 @@ res://Escenas/cocina_sala.tscn
 res://Escenas/sala_principal.tscn
 res://Escenas/baño_sala.tscn
 res://Escenas/sotano_sala.tscn
+res://Scripts/menu_principal.gd
+res://Escenas/menu_principal.tscn
