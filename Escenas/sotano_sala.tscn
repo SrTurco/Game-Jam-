@@ -1,8 +1,62 @@
 [gd_scene format=3 uid="uid://djqave45035ls"]
 
+[ext_resource type="Texture2D" uid="uid://cv1362bosiaff" path="res://assets/Backround/sotano_skt_v01.jpg" id="1_db4s7"]
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_fw0b8"]
+[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_ru3cf"]
+[ext_resource type="Script" uid="uid://cmkadb1fhx83v" path="res://Scripts/ventilacion_juego.gd" id="3_vljhc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_in5sg"]
 
 [node name="Node2D" type="Node2D" unique_id=1085568832]
 
+[node name="SotanoSktV01" type="Sprite2D" parent="." unique_id=856020688]
+position = Vector2(960, 540)
+texture = ExtResource("1_db4s7")
+metadata/_edit_lock_ = true
+
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_fw0b8")]
 position = Vector2(244, 73)
+
+[node name="ventilacion juego" type="Node2D" parent="." unique_id=1049194941]
+position = Vector2(394, 732)
+script = ExtResource("3_vljhc")
+
+[node name="herramientas" type="Node2D" parent="ventilacion juego" unique_id=1136013771]
+
+[node name="francesa" type="TextureButton" parent="ventilacion juego/herramientas" unique_id=789127916]
+offset_left = -23.999998
+offset_top = 104.0
+offset_right = 104.0
+offset_bottom = 232.0
+scale = Vector2(1.4508466, 1.3613819)
+texture_normal = ExtResource("2_ru3cf")
+
+[node name="destornillador" type="TextureButton" parent="ventilacion juego/herramientas" unique_id=1568714362]
+offset_left = 535.00006
+offset_top = 104.0
+offset_right = 663.00006
+offset_bottom = 232.0
+scale = Vector2(1.4508466, 1.3613819)
+texture_normal = ExtResource("2_ru3cf")
+
+[node name="picoLoro" type="TextureButton" parent="ventilacion juego/herramientas" unique_id=682940958]
+offset_left = 1059.9999
+offset_top = 104.0
+offset_right = 1187.9999
+offset_bottom = 232.0
+scale = Vector2(1.4508466, 1.3613819)
+texture_normal = ExtResource("2_ru3cf")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=588121414]
+position = Vector2(421, 470)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1688684484]
+scale = Vector2(11.608574, 12.143446)
+shape = SubResource("CircleShape2D_in5sg")
+
+[node name="Label" type="Label" parent="." unique_id=1743610776]
+offset_left = 780.0
+offset_top = 932.0
+offset_right = 820.0
+offset_bottom = 955.0
+theme_override_font_sizes/font_size = 30
