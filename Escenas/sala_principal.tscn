@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cipgboflpfow7"]
 
 [ext_resource type="Script" uid="uid://jktq2clkxogd" path="res://Scripts/menu_inicio.gd" id="1_tn55x"]
+[ext_resource type="PackedScene" uid="uid://wytsxdqxm2ot" path="res://Escenas/pause_menu.tscn" id="2_l6tan"]
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="2_mooak"]
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="3_l6tan"]
 
@@ -10,7 +11,10 @@ radius = 96.25487
 [node name="MenuInicio" type="Node2D" unique_id=1201324041]
 script = ExtResource("1_tn55x")
 
+[node name="pause_menu" parent="." unique_id=1526808940 instance=ExtResource("2_l6tan")]
+
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("2_mooak")]
+process_mode = 1
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1553559977]
 position = Vector2(779, 274)

@@ -1,6 +1,8 @@
+Node
 TextureButton
-Sprite2D
 Label
+Node2D
+Sprite2D
 CollisionShape2D
 Area2D
 CharacterBody2D
