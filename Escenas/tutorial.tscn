@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d2or2unjc48go"]
+
+[ext_resource type="Script" uid="uid://bugsdyi4ue7xr" path="res://Scripts/tutorial.gd" id="1_unt0s"]
+[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_w3ak3"]
+
+[node name="Node2d" type="Node2D" unique_id=860538185]
+script = ExtResource("1_unt0s")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=2012321999]
+offset_left = 1635.0
+offset_top = 883.0
+offset_right = 1763.0
+offset_bottom = 1011.0
+texture_normal = ExtResource("2_w3ak3")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
