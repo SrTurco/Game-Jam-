@@ -31,3 +31,8 @@ func player_collision_with_object(body):
 func player_quit_collision_area(body):
 	inside_collision = false
 	label.hide()
+
+
+func minijuego_baño(body):
+	
+	pass # Replace with function body.

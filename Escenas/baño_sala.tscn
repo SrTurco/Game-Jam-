@@ -1,8 +1,159 @@
 [gd_scene format=3 uid="uid://d3chagbdk6dij"]
 
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_mcjmb"]
+[ext_resource type="Script" uid="uid://b42iw407sqhes" path="res://Scripts/rotacion_de_tubos.gd" id="2_uym0p"]
+[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="3_ytnfl"]
 
-[node name="Node2D" type="Node2D" unique_id=1085568832]
+[sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
+
+[node name="Baño" type="Node2D" unique_id=1085568832]
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_mcjmb")]
 position = Vector2(281, 164)
+
+[node name="rotacion de tubos" type="Control" parent="." unique_id=623929885]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 392.0
+offset_top = 285.0
+offset_right = 392.0
+offset_bottom = 285.0
+script = ExtResource("2_uym0p")
+
+[node name="Sprite2D" type="Sprite2D" parent="rotacion de tubos" unique_id=1139393570 groups=["sprites_rotables"]]
+position = Vector2(32, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="rotacion de tubos" unique_id=799676870 groups=["sprites_rotables"]]
+position = Vector2(191, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="rotacion de tubos" unique_id=1604517029 groups=["sprites_rotables"]]
+position = Vector2(351, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="rotacion de tubos" unique_id=2002477498 groups=["sprites_rotables"]]
+position = Vector2(510, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D5" type="Sprite2D" parent="rotacion de tubos" unique_id=189633375 groups=["sprites_rotables"]]
+position = Vector2(677, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D6" type="Sprite2D" parent="rotacion de tubos" unique_id=1675555675 groups=["sprites_rotables"]]
+position = Vector2(836, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="rotacion de tubos" unique_id=1837595567 groups=["sprites_rotables"]]
+position = Vector2(996, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="rotacion de tubos" unique_id=1381247625 groups=["sprites_rotables"]]
+position = Vector2(1155, -17)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D9" type="Sprite2D" parent="rotacion de tubos" unique_id=675332475 groups=["sprites_rotables"]]
+position = Vector2(32, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D10" type="Sprite2D" parent="rotacion de tubos" unique_id=55389723 groups=["sprites_rotables"]]
+position = Vector2(191, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D11" type="Sprite2D" parent="rotacion de tubos" unique_id=645651894 groups=["sprites_rotables"]]
+position = Vector2(351, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D12" type="Sprite2D" parent="rotacion de tubos" unique_id=1550017441 groups=["sprites_rotables"]]
+position = Vector2(510, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D13" type="Sprite2D" parent="rotacion de tubos" unique_id=2109264260 groups=["sprites_rotables"]]
+position = Vector2(677, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D14" type="Sprite2D" parent="rotacion de tubos" unique_id=363714209 groups=["sprites_rotables"]]
+position = Vector2(836, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D15" type="Sprite2D" parent="rotacion de tubos" unique_id=1756003567 groups=["sprites_rotables"]]
+position = Vector2(996, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D16" type="Sprite2D" parent="rotacion de tubos" unique_id=1519988566 groups=["sprites_rotables"]]
+position = Vector2(1155, 142)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D17" type="Sprite2D" parent="rotacion de tubos" unique_id=195834908 groups=["sprites_rotables"]]
+position = Vector2(32, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D18" type="Sprite2D" parent="rotacion de tubos" unique_id=414535276 groups=["sprites_rotables"]]
+position = Vector2(191, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D19" type="Sprite2D" parent="rotacion de tubos" unique_id=1042032234 groups=["sprites_rotables"]]
+position = Vector2(351, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D20" type="Sprite2D" parent="rotacion de tubos" unique_id=2022661804 groups=["sprites_rotables"]]
+position = Vector2(510, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D21" type="Sprite2D" parent="rotacion de tubos" unique_id=505703674 groups=["sprites_rotables"]]
+position = Vector2(677, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D22" type="Sprite2D" parent="rotacion de tubos" unique_id=1607114112 groups=["sprites_rotables"]]
+position = Vector2(836, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D23" type="Sprite2D" parent="rotacion de tubos" unique_id=1251151435 groups=["sprites_rotables"]]
+position = Vector2(996, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D24" type="Sprite2D" parent="rotacion de tubos" unique_id=1483565165 groups=["sprites_rotables"]]
+position = Vector2(1155, 309)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D25" type="Sprite2D" parent="rotacion de tubos" unique_id=113414653 groups=["sprites_rotables"]]
+position = Vector2(32, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D26" type="Sprite2D" parent="rotacion de tubos" unique_id=2025784252 groups=["sprites_rotables"]]
+position = Vector2(191, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D27" type="Sprite2D" parent="rotacion de tubos" unique_id=1625704297 groups=["sprites_rotables"]]
+position = Vector2(351, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D28" type="Sprite2D" parent="rotacion de tubos" unique_id=503746312 groups=["sprites_rotables"]]
+position = Vector2(510, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D29" type="Sprite2D" parent="rotacion de tubos" unique_id=1998574647 groups=["sprites_rotables"]]
+position = Vector2(677, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D30" type="Sprite2D" parent="rotacion de tubos" unique_id=19981077 groups=["sprites_rotables"]]
+position = Vector2(836, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D31" type="Sprite2D" parent="rotacion de tubos" unique_id=770808626 groups=["sprites_rotables"]]
+position = Vector2(996, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Sprite2D32" type="Sprite2D" parent="rotacion de tubos" unique_id=191907899 groups=["sprites_rotables"]]
+position = Vector2(1155, 470)
+texture = ExtResource("3_ytnfl")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=245032530]
+position = Vector2(872, 347)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1115025352]
+scale = Vector2(9.518973, 8.837905)
+shape = SubResource("CircleShape2D_44saq")
+
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="minijuego_baño"]
