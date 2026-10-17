@@ -1,11 +1,9 @@
 extends Node2D
 
-func _ready():
-	get_tree().paused = true
+@onready var tubos = $"."
 
-func _unhandled_input(event):
-	if Input.is_action_just_pressed("interactuar"):
-		get_tree().paused = false
+@export var global_position_x = -1368
+@export var global_position_y = -713
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
