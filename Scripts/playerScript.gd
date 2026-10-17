@@ -1,30 +1,22 @@
 extends CharacterBody2D
 
 @onready var label = $"../Label"
-
-
-
 const SPEED = 450
-
-var inside_collision = false
-var onScreen = false
-
-var collision_door_bathroom = false
-var mini_bathroom = false
 
 var playerPosition = GlobalInteractuable.playerPosition
 
+var objeto_actual = null
 
 func _ready():
-	print(get_node_or_null("/root/GlobalInteractuable"))
 	label.hide()
-
 
 func _process(delta: float) -> void:
 	
 	playerPosition = self.global_position
 	
-
+	if objeto_actual != null and Input.is_action_just_pressed("interactuar"):
+		objeto_actual.accionar()
+		print("accionado")
 
 func _physics_process(delta):
 	var direccion = Input.get_vector("left", "right", "up", "down")
@@ -38,33 +30,34 @@ func _physics_process(delta):
 		
 	move_and_slide()
 
-func interactuar(objeto):
-	if Input.is_action_just_pressed("interactuar"):
-		print("interactuar")
-		interactuable(objeto)
+func interactuable(objeto):
+	objeto_actual = objeto
 
 # Al entrar a la colission de tal objeto (aun no se sabe el objeto)
-func player_collision_with_object(body):
-	inside_collision = true
+func player_collision_with_object(body: CharacterBody2D):
 	label.text = "Presionar E para ir al baño"
 	label.show()
 	interactuable($"../acceso_baño")
 
-func player_quit_collision_area(body):
-	inside_collision = false
+func player_quit_collision_area(body: CharacterBody2D):
 	label.hide()
+	objeto_actual = null
 
-func minijuego_baño(body):
+func _on_juego_tubos_body_entered(body: CharacterBody2D):
 	label.text = "Presionar E para interactuar"
 	label.show()
-	inside_collision = true
+	interactuable($"../rotacion de tubos")
 
-func minijuego_baño_exit(body):
-	inside_collision=false
+func _on_juego_tubos_body_exited(body: CharacterBody2D):
 	label.hide()
+	objeto_actual = null
 
-func interactuable(objeto):
-	if GlobalInteractuable.playerPosition == objeto.global_position:
-		if Input.is_action_just_pressed("interactuar"):
-			objeto.accionar()
-			print("accionado")
+func _on_back_to_living_room_body_entered(body):
+	label.text = "Presionar E para interactuar"
+	label.show()
+	interactuable($"../backToLivingRoom")
+
+
+func _on_back_to_living_room_body_exited(body):
+	label.hide()
+	objeto_actual = null

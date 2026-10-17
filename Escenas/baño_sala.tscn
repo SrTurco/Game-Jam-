@@ -5,8 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://d1truv84rw1rc" path="res://Escenas/rotacion_de_tubos.tscn" id="2_55whg"]
 [ext_resource type="Texture2D" uid="uid://bxm8jubq3k8gg" path="res://assets/Backround/toilet_skt_v01.jpg" id="3_uym0p"]
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="5_544ki"]
+[ext_resource type="Script" uid="uid://dfuuvv8kwu6tr" path="res://Scripts/back_to_living_room.gd" id="6_q3s06"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_44saq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
 
 [node name="Baño" type="Node2D" unique_id=1085568832]
 script = ExtResource("1_ytnfl")
@@ -16,12 +21,12 @@ position = Vector2(960, 540)
 texture = ExtResource("3_uym0p")
 metadata/_edit_lock_ = true
 
+[node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_mcjmb")]
+position = Vector2(1433, 898)
+
 [node name="rotacion de tubos" parent="." unique_id=1816809060 instance=ExtResource("2_55whg")]
 process_mode = 0
 position = Vector2(-1368, -713)
-
-[node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_mcjmb")]
-position = Vector2(1433, 898)
 
 [node name="juego tubos" type="Area2D" parent="." unique_id=245032530]
 position = Vector2(554, 635)
@@ -31,6 +36,7 @@ scale = Vector2(9.518973, 8.837905)
 shape = SubResource("CircleShape2D_44saq")
 
 [node name="Label" type="Label" parent="." unique_id=1182375908]
+visible = false
 offset_left = 954.0
 offset_top = 935.0
 offset_right = 994.0
@@ -41,3 +47,62 @@ theme_override_font_sizes/font_size = 30
 visible = false
 position = Vector2(1543, 929)
 texture = ExtResource("5_544ki")
+
+[node name="collisions" type="StaticBody2D" parent="." unique_id=383642851]
+position = Vector2(3, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisions" unique_id=437709497]
+position = Vector2(197, 722)
+rotation = -0.7275248
+scale = Vector2(8.50386, 52.961334)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="collisions" unique_id=36473152]
+position = Vector2(197, 722)
+rotation = -1.9354961
+scale = Vector2(7.443121, 73.938354)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="collisions" unique_id=2038039524]
+position = Vector2(840, 472.99994)
+rotation = -1.1345941
+scale = Vector2(-7.476659, 27.328997)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="collisions" unique_id=1764306403]
+position = Vector2(1069, 580)
+rotation = -2.0508668
+scale = Vector2(-7.476659, 27.328997)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="collisions" unique_id=879496494]
+position = Vector2(1223.0001, 507.00006)
+rotation = -1.1510029
+scale = Vector2(-8.696564, 77.93147)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="collisions" unique_id=1809400732]
+position = Vector2(1909, 818)
+rotation = 0.0064655542
+scale = Vector2(-8.696564, 77.93147)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="collisions" unique_id=1991550328]
+position = Vector2(1904.0001, 1084)
+rotation = 1.5708787
+scale = Vector2(-8.398296, 138.83386)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="backToLivingRoom" type="Area2D" parent="." unique_id=1745435437]
+position = Vector2(1549, 920)
+script = ExtResource("6_q3s06")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backToLivingRoom" unique_id=1728780669]
+position = Vector2(66, 57)
+scale = Vector2(9.225977, 6.44097)
+shape = SubResource("RectangleShape2D_44saq")
+
+[connection signal="body_entered" from="juego tubos" to="CharacterBody2D" method="_on_juego_tubos_body_entered"]
+[connection signal="body_exited" from="juego tubos" to="CharacterBody2D" method="_on_juego_tubos_body_exited"]
+[connection signal="body_entered" from="backToLivingRoom" to="CharacterBody2D" method="_on_back_to_living_room_body_entered"]
+[connection signal="body_exited" from="backToLivingRoom" to="CharacterBody2D" method="_on_back_to_living_room_body_exited"]
