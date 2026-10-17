@@ -1,4 +1,11 @@
-extends Control
+extends Node2D
+
+func _ready():
+	get_tree().paused = true
+
+func _unhandled_input(event):
+	if Input.is_action_just_pressed("interactuar"):
+		get_tree().paused = false
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:

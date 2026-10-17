@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://d1truv84rw1rc"]
+
+[ext_resource type="Script" uid="uid://b42iw407sqhes" path="res://Scripts/rotacion_de_tubos.gd" id="1_2gsu7"]
+[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_igtd1"]
+
+[node name="rotacion de tubos" type="Node2D" unique_id=1816809060]
+process_mode = 3
+script = ExtResource("1_2gsu7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1131243807 groups=["sprites_rotables"]]
+position = Vector2(32, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1519434416 groups=["sprites_rotables"]]
+position = Vector2(191, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=605214196 groups=["sprites_rotables"]]
+position = Vector2(351, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1057616750 groups=["sprites_rotables"]]
+position = Vector2(510, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1069412193 groups=["sprites_rotables"]]
+position = Vector2(677, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=78459894 groups=["sprites_rotables"]]
+position = Vector2(836, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1442486601 groups=["sprites_rotables"]]
+position = Vector2(996, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=1318190873 groups=["sprites_rotables"]]
+position = Vector2(1155, -17)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=1213664349 groups=["sprites_rotables"]]
+position = Vector2(32, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=467316430 groups=["sprites_rotables"]]
+position = Vector2(191, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=1408181695 groups=["sprites_rotables"]]
+position = Vector2(351, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D12" type="Sprite2D" parent="." unique_id=128205132 groups=["sprites_rotables"]]
+position = Vector2(510, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D13" type="Sprite2D" parent="." unique_id=803130777 groups=["sprites_rotables"]]
+position = Vector2(677, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D14" type="Sprite2D" parent="." unique_id=1640854683 groups=["sprites_rotables"]]
+position = Vector2(836, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D15" type="Sprite2D" parent="." unique_id=1797157844 groups=["sprites_rotables"]]
+position = Vector2(996, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D16" type="Sprite2D" parent="." unique_id=937303022 groups=["sprites_rotables"]]
+position = Vector2(1155, 142)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D17" type="Sprite2D" parent="." unique_id=729039620 groups=["sprites_rotables"]]
+position = Vector2(32, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D18" type="Sprite2D" parent="." unique_id=100091620 groups=["sprites_rotables"]]
+position = Vector2(191, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D19" type="Sprite2D" parent="." unique_id=763878185 groups=["sprites_rotables"]]
+position = Vector2(351, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D20" type="Sprite2D" parent="." unique_id=271144325 groups=["sprites_rotables"]]
+position = Vector2(510, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D21" type="Sprite2D" parent="." unique_id=46253159 groups=["sprites_rotables"]]
+position = Vector2(677, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D22" type="Sprite2D" parent="." unique_id=160962684 groups=["sprites_rotables"]]
+position = Vector2(836, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D23" type="Sprite2D" parent="." unique_id=884179746 groups=["sprites_rotables"]]
+position = Vector2(996, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D24" type="Sprite2D" parent="." unique_id=1186163359 groups=["sprites_rotables"]]
+position = Vector2(1155, 309)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D25" type="Sprite2D" parent="." unique_id=1282984791 groups=["sprites_rotables"]]
+position = Vector2(32, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D26" type="Sprite2D" parent="." unique_id=162612867 groups=["sprites_rotables"]]
+position = Vector2(191, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D27" type="Sprite2D" parent="." unique_id=1757993803 groups=["sprites_rotables"]]
+position = Vector2(351, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D28" type="Sprite2D" parent="." unique_id=609723604 groups=["sprites_rotables"]]
+position = Vector2(510, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D29" type="Sprite2D" parent="." unique_id=1694459891 groups=["sprites_rotables"]]
+position = Vector2(677, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D30" type="Sprite2D" parent="." unique_id=1973314105 groups=["sprites_rotables"]]
+position = Vector2(836, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D31" type="Sprite2D" parent="." unique_id=1185156006 groups=["sprites_rotables"]]
+position = Vector2(996, 470)
+texture = ExtResource("2_igtd1")
+
+[node name="Sprite2D32" type="Sprite2D" parent="." unique_id=1873310310 groups=["sprites_rotables"]]
+position = Vector2(1155, 470)
+texture = ExtResource("2_igtd1")

@@ -1,10 +1,16 @@
 extends CharacterBody2D
 
-@onready var label = $"../label"
+@onready var label = $"../Label"
+@onready var tubos = $"../rotacion de tubos"
+
 
 const SPEED = 450
 
 var inside_collision = false
+
+func _ready():
+	label.hide()
+	tubos.hide()
 
 func _physics_process(delta):
 	
@@ -32,7 +38,15 @@ func player_quit_collision_area(body):
 	inside_collision = false
 	label.hide()
 
+func _unhandled_input(event):
+	if event.is_action_pressed("interactuar") and inside_collision:
+		tubos.show()
 
 func minijuego_baño(body):
-	
-	pass # Replace with function body.
+	inside_collision = true
+	label.text = "Presionar E para interactuar"
+	label.show()
+
+func minijuego_baño_exit(body):
+	inside_collision=false
+	label.hide()
