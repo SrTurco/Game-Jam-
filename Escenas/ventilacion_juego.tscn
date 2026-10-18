@@ -1,0 +1,172 @@
+[gd_scene format=3 uid="uid://v8u575s5x4le"]
+
+[ext_resource type="Script" uid="uid://cmkadb1fhx83v" path="res://Scripts/ventilacion_juego.gd" id="1_8uvq3"]
+[ext_resource type="Texture2D" uid="uid://di6f1vir0afbo" path="res://assets/Backround/FONDO_MINIJUEGOS_V01.png" id="2_a872p"]
+[ext_resource type="Texture2D" uid="uid://bnuuywxir0sy4" path="res://assets/Backround/FG_MINIJUEGOS_V01.png" id="3_0fghl"]
+[ext_resource type="Texture2D" uid="uid://m1unpr83w0b4" path="res://assets/MINIJUEGO_3/PARED_VENTILACION.png" id="4_up8nc"]
+[ext_resource type="Texture2D" uid="uid://5lthvyt70svs" path="res://assets/MINIJUEGO_3/LLAVE_FRANCESA_V01.png" id="5_o74d7"]
+[ext_resource type="Texture2D" uid="uid://dh7eayc47k2pd" path="res://assets/MINIJUEGO_3/DESTORNILLADOR.png" id="6_7g531"]
+[ext_resource type="Texture2D" uid="uid://b6eumh2i0cs2b" path="res://assets/MINIJUEGO_3/PICO_LORO_V01.png" id="7_h5ebl"]
+[ext_resource type="Texture2D" uid="uid://bh5xlnwsrgr3v" path="res://assets/MINIJUEGO_3/VENTILACION_V01.png" id="8_00bp8"]
+[ext_resource type="Texture2D" uid="uid://so1l7g4uvymo" path="res://assets/MINIJUEGO_3/TORNILLO_FRENTE.png" id="9_v5ufi"]
+[ext_resource type="Texture2D" uid="uid://clt2cv02ukumv" path="res://assets/MINIJUEGO_3/TORNILLO_1.png" id="10_3j5ll"]
+[ext_resource type="Texture2D" uid="uid://cabglsuptbgy6" path="res://assets/MINIJUEGO_3/TORNILLO_2.png" id="11_do5po"]
+[ext_resource type="Texture2D" uid="uid://0n4wd12e0frh" path="res://assets/MINIJUEGO_3/TORNILLO_3.png" id="12_naos4"]
+[ext_resource type="FontFile" uid="uid://bvcjpp5q1mxo4" path="res://font/font/Roboto-BlackItalic.ttf" id="13_0fghl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
+
+[node name="ventilacion juego" type="Node2D" unique_id=746009285]
+script = ExtResource("1_8uvq3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1810714894]
+position = Vector2(961, 542)
+scale = Vector2(0.8536704, 0.8548969)
+texture = ExtResource("2_a872p")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1965799502]
+position = Vector2(961, 542)
+scale = Vector2(0.8536704, 0.8548969)
+texture = ExtResource("3_0fghl")
+
+[node name="ParedVentilacion" type="Sprite2D" parent="." unique_id=1808405216]
+position = Vector2(965.00006, 692.4526)
+scale = Vector2(0.43415406, 0.43415406)
+texture = ExtResource("4_up8nc")
+
+[node name="VentilacionV01" type="Sprite2D" parent="." unique_id=1258269568]
+position = Vector2(934.00006, 691.4525)
+scale = Vector2(0.6961578, 0.6961578)
+texture = ExtResource("8_00bp8")
+
+[node name="herramientas" type="Node2D" parent="." unique_id=966703544]
+position = Vector2(-3, 1)
+
+[node name="francesa" type="TextureButton" parent="herramientas" unique_id=217921110]
+offset_left = 341.0
+offset_top = 66.0
+offset_right = 761.0
+offset_bottom = 496.0
+scale = Vector2(0.54047924, 0.50715125)
+texture_normal = ExtResource("5_o74d7")
+metadata/_edit_use_anchors_ = true
+
+[node name="destornillador" type="TextureButton" parent="herramientas" unique_id=736238994]
+offset_left = 834.0
+offset_top = 69.00001
+offset_right = 1363.0
+offset_bottom = 578.0
+scale = Vector2(0.47272602, 0.44357595)
+texture_normal = ExtResource("6_7g531")
+metadata/_edit_use_anchors_ = true
+
+[node name="picoLoro" type="TextureButton" parent="herramientas" unique_id=1672432969]
+offset_left = 1307.0
+offset_top = 71.00006
+offset_right = 1449.0
+offset_bottom = 643.00006
+rotation = -0.69223523
+scale = Vector2(0.6388227, 0.59943044)
+texture_normal = ExtResource("7_h5ebl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2100748873]
+visible = false
+offset_left = 604.0
+offset_top = 287.0
+offset_right = 644.0
+offset_bottom = 329.0
+theme_override_fonts/font = ExtResource("13_0fghl")
+theme_override_font_sizes/font_size = 30
+
+[node name="Timer" type="Timer" parent="Label" unique_id=1169786929]
+wait_time = 3.0
+
+[node name="tornilloCaidoHandler" type="Node2D" parent="." unique_id=1580664682]
+
+[node name="Tornillo1" type="Sprite2D" parent="tornilloCaidoHandler" unique_id=1722795457 groups=["tornillo_caido"]]
+visible = false
+position = Vector2(303.99994, 953)
+scale = Vector2(0.40865928, 0.40865928)
+texture = ExtResource("10_3j5ll")
+
+[node name="Tornillo2" type="Sprite2D" parent="tornilloCaidoHandler" unique_id=678019617 groups=["tornillo_caido"]]
+visible = false
+position = Vector2(1631, 987)
+scale = Vector2(0.4226471, 0.4226471)
+texture = ExtResource("11_do5po")
+
+[node name="Tornillo3" type="Sprite2D" parent="tornilloCaidoHandler" unique_id=863480232 groups=["tornillo_caido"]]
+visible = false
+position = Vector2(703, 1003.9999)
+scale = Vector2(0.3832827, 0.3832827)
+texture = ExtResource("12_naos4")
+
+[node name="Tornillo4" type="Sprite2D" parent="tornilloCaidoHandler" unique_id=2037782884 groups=["tornillo_caido"]]
+visible = false
+position = Vector2(1226, 1003.9999)
+rotation = -3.1415925
+scale = Vector2(0.3832827, 0.3832827)
+texture = ExtResource("12_naos4")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=641938138 groups=["escape"]]
+position = Vector2(965, 665)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1893297833]
+scale = Vector2(53.64637, 28.763672)
+shape = SubResource("RectangleShape2D_44saq")
+
+[node name="tornillosHandler" type="Node2D" parent="." unique_id=904562805]
+
+[node name="tornillo1" type="Area2D" parent="tornillosHandler" unique_id=146516585]
+position = Vector2(465, 414.00006)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tornillosHandler/tornillo1" unique_id=1724837264]
+scale = Vector2(5.0028515, 5.0028515)
+shape = SubResource("CircleShape2D_44saq")
+
+[node name="Sprite2D" type="Sprite2D" parent="tornillosHandler/tornillo1" unique_id=351345374 groups=["tornillo_puesto"]]
+texture = ExtResource("9_v5ufi")
+
+[node name="tornillo2" type="Area2D" parent="tornillosHandler" unique_id=256970711]
+position = Vector2(1492.0001, 405)
+rotation = -1.1332603
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tornillosHandler/tornillo2" unique_id=227481030]
+scale = Vector2(5.0028515, 5.0028515)
+shape = SubResource("CircleShape2D_44saq")
+
+[node name="Sprite2D" type="Sprite2D" parent="tornillosHandler/tornillo2" unique_id=1971315378 groups=["tornillo_puesto"]]
+texture = ExtResource("9_v5ufi")
+
+[node name="tornillo3" type="Area2D" parent="tornillosHandler" unique_id=1325711324]
+position = Vector2(1435.9999, 943.0001)
+rotation = -1.808143
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tornillosHandler/tornillo3" unique_id=729815607]
+scale = Vector2(5.0028515, 5.0028515)
+shape = SubResource("CircleShape2D_44saq")
+
+[node name="Sprite2D" type="Sprite2D" parent="tornillosHandler/tornillo3" unique_id=1497572500 groups=["tornillo_puesto"]]
+texture = ExtResource("9_v5ufi")
+
+[node name="tornillo4" type="Area2D" parent="tornillosHandler" unique_id=1341456661]
+position = Vector2(486, 943.0001)
+rotation = -0.7219435
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tornillosHandler/tornillo4" unique_id=596043025]
+scale = Vector2(5.0028515, 5.0028515)
+shape = SubResource("CircleShape2D_44saq")
+
+[node name="Sprite2D" type="Sprite2D" parent="tornillosHandler/tornillo4" unique_id=1532001855 groups=["tornillo_puesto"]]
+texture = ExtResource("9_v5ufi")
+
+[connection signal="pressed" from="herramientas/francesa" to="." method="_on_francesa_pressed"]
+[connection signal="pressed" from="herramientas/destornillador" to="." method="_on_destornillador_pressed"]
+[connection signal="pressed" from="herramientas/picoLoro" to="." method="_on_pico_loro_pressed"]
+[connection signal="timeout" from="Label/Timer" to="." method="_on_timer_timeout"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

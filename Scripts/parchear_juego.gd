@@ -6,9 +6,6 @@ var positionEpoxi = 0
 
 var colission_entered = false
 
-var holes = [
-	"holefixed1", "holefixed2", "holefixed3", "holefixed4", "holefixed5",
-]
 var holesFixed = 0
 
 var miniCompletado = false 
@@ -43,6 +40,7 @@ func _input(event):
 			agarrado = false
 	
 	if miniCompletado:
+		GlobalInteractuable.bañoMinijuego = true
 		GlobalInteractuable.cocinaMinijuego = true
 		self.global_position = Vector2(-1370, -1000)
 

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dwnjg8juvd4w1" path="res://assets/Backround/cocina_skt_v01.jpg" id="2_7gxgc"]
 [ext_resource type="Script" uid="uid://o1man1q4guqy" path="res://Scripts/juego_parchear.gd" id="3_rd7kc"]
 [ext_resource type="PackedScene" uid="uid://rrfrb24ugeib" path="res://Escenas/parchearJuego.tscn" id="3_rpgpt"]
+[ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="6_0bu10"]
 [ext_resource type="Script" uid="uid://dfuuvv8kwu6tr" path="res://Scripts/back_to_living_room.gd" id="6_3sr5w"]
 [ext_resource type="Script" uid="uid://bwlc2ypw78r27" path="res://Scripts/sotano_room.gd" id="6_hq138"]
 
@@ -97,6 +98,8 @@ offset_left = 722.0
 offset_top = 891.0
 offset_right = 762.0
 offset_bottom = 933.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_0bu10")
 theme_override_font_sizes/font_size = 30
 
 [node name="sotanoRoom" type="Area2D" parent="." unique_id=1836212197]

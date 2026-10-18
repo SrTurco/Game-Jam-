@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://dcks21ee56j77"]
+
+[ext_resource type="Texture2D" uid="uid://di6f1vir0afbo" path="res://assets/Backround/FONDO_MINIJUEGOS_V01.png" id="1_wscr7"]
+[ext_resource type="Texture2D" uid="uid://bmcqbjibxaf0q" path="res://assets/tubos/laberinto/TUBO_CORRECTO.png" id="2_hw6aa"]
+[ext_resource type="Texture2D" uid="uid://dwm2b4bivl4g6" path="res://assets/tubos/laberinto/TUBO_INCORRECTO_01.png" id="3_yc1ow"]
+[ext_resource type="Texture2D" uid="uid://b5vi84cggtl5o" path="res://assets/tubos/laberinto/TUBO_INCORRECTO_02.png" id="4_qyt7a"]
+[ext_resource type="Texture2D" uid="uid://bnuuywxir0sy4" path="res://assets/Backround/FG_MINIJUEGOS_V01.png" id="5_ndend"]
+[ext_resource type="Texture2D" uid="uid://bcppvbc4rmogb" path="res://assets/canillas/CANILLA_BASE.png" id="6_hw6aa"]
+[ext_resource type="Texture2D" uid="uid://cdvi18t760rik" path="res://assets/progressbar/107761.jpg" id="7_qyt7a"]
+[ext_resource type="Texture2D" uid="uid://bcuon0oe3b0kr" path="res://assets/progressbar/107914.jpg" id="8_ndend"]
+[ext_resource type="Texture2D" uid="uid://2rld4pll0cfr" path="res://assets/canillas/CANILLA.png" id="9_ndend"]
+
+[node name="laberinto" type="Node2D" unique_id=871257911]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1831365080]
+position = Vector2(961, 542)
+scale = Vector2(0.8536704, 0.8548969)
+texture = ExtResource("1_wscr7")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=703302482]
+offset_left = 554.0
+offset_top = 91.0
+offset_right = 558.0
+offset_bottom = 118.0
+rotation = -1.5707964
+scale = Vector2(19.822416, 32.417923)
+value = 100.0
+fill_mode = 1
+show_percentage = false
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=1128268500]
+offset_left = 558.0
+offset_top = 14.999997
+offset_right = 686.0
+offset_bottom = 143.0
+scale = Vector2(0.84661585, 0.11064254)
+value = 100.0
+texture_under = ExtResource("7_qyt7a")
+texture_progress = ExtResource("8_ndend")
+texture_progress_offset = Vector2(0, 1)
+
+[node name="cañosPlaceHolder" type="Node2D" parent="." unique_id=831504919]
+
+[node name="caño1true" type="Sprite2D" parent="cañosPlaceHolder" unique_id=3758234]
+position = Vector2(779, 550)
+scale = Vector2(0.74754953, 0.74754953)
+texture = ExtResource("2_hw6aa")
+
+[node name="caño2" type="Sprite2D" parent="cañosPlaceHolder" unique_id=1417151618]
+position = Vector2(697, 537)
+scale = Vector2(0.81051236, 0.81051236)
+texture = ExtResource("3_yc1ow")
+
+[node name="caño3" type="Sprite2D" parent="cañosPlaceHolder" unique_id=1862952070]
+position = Vector2(613, 681.99994)
+scale = Vector2(0.70406985, 0.70406985)
+texture = ExtResource("4_qyt7a")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263071291]
+position = Vector2(961, 542)
+scale = Vector2(0.8536704, 0.8548969)
+texture = ExtResource("5_ndend")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1886531379]
+position = Vector2(1552, 613)
+texture = ExtResource("6_hw6aa")
+
+[node name="canillaPlaceHolder" type="Node2D" parent="." unique_id=859211636]
+
+[node name="Canilla" type="Sprite2D" parent="canillaPlaceHolder" unique_id=326796596]
+position = Vector2(60.999996, 594.00006)
+scale = Vector2(0.5365339, 0.5365339)
+texture = ExtResource("9_ndend")
+
+[node name="Canilla2" type="Sprite2D" parent="canillaPlaceHolder" unique_id=1439456538]
+position = Vector2(60.999996, 339.00006)
+scale = Vector2(0.5365339, 0.5365339)
+texture = ExtResource("9_ndend")
+
+[node name="Canilla3" type="Sprite2D" parent="canillaPlaceHolder" unique_id=993402412]
+position = Vector2(60.999996, 150.00002)
+scale = Vector2(0.5365339, 0.5365339)
+texture = ExtResource("9_ndend")
+
+[node name="Canilla4" type="Sprite2D" parent="canillaPlaceHolder" unique_id=1722204190]
+position = Vector2(60.999996, 804)
+scale = Vector2(0.5365339, 0.5365339)
+texture = ExtResource("9_ndend")
+
+[node name="Canilla5" type="Sprite2D" parent="canillaPlaceHolder" unique_id=428399559]
+position = Vector2(60.999996, 948.00006)
+scale = Vector2(0.5365339, 0.5365339)
+texture = ExtResource("9_ndend")
+
+[node name="Fondo" type="Node2D" parent="." unique_id=1272461119]
+
+[node name="TimerProgressBar" type="Timer" parent="." unique_id=1006726857]
+wait_time = 40.0
+one_shot = true

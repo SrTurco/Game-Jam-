@@ -99,3 +99,9 @@ func _on_sotano_room_body_entered(_body: CharacterBody2D):
 func _on_sotano_room_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
+
+func _on_laberintojuego_body_entered(body):
+	pass # Replace with function body.
+
+func _on_laberintojuego_body_exited(body):
+	pass # Replace with function body.

@@ -4,10 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_fw0b8"]
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_ru3cf"]
 [ext_resource type="Script" uid="uid://cmkadb1fhx83v" path="res://Scripts/ventilacion_juego.gd" id="3_vljhc"]
+[ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="5_vljhc"]
+[ext_resource type="PackedScene" uid="uid://dcks21ee56j77" path="res://Escenas/laberinto.tscn" id="6_e10ms"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_in5sg"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_vljhc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 
 [node name="Node2D" type="Node2D" unique_id=1085568832]
 
@@ -62,9 +66,12 @@ offset_left = 780.0
 offset_top = 932.0
 offset_right = 820.0
 offset_bottom = 955.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_vljhc")
 theme_override_font_sizes/font_size = 30
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=936095371]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1488873251]
 position = Vector2(868, 120.00001)
@@ -138,5 +145,16 @@ rotation = 1.1637346
 scale = Vector2(7.414481, 101.64122)
 shape = SubResource("SegmentShape2D_vljhc")
 
+[node name="laberintojuego" type="Area2D" parent="." unique_id=2130328224]
+position = Vector2(491, 497)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="laberintojuego" unique_id=1343933174]
+scale = Vector2(8.142111, 8.142111)
+shape = SubResource("CircleShape2D_44saq")
+
+[node name="laberinto" parent="." unique_id=871257911 instance=ExtResource("6_e10ms")]
+
 [connection signal="body_entered" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_entered"]
 [connection signal="body_exited" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_exited"]
+[connection signal="body_entered" from="laberintojuego" to="CharacterBody2D" method="_on_laberintojuego_body_entered"]
+[connection signal="body_exited" from="laberintojuego" to="CharacterBody2D" method="_on_laberintojuego_body_exited"]

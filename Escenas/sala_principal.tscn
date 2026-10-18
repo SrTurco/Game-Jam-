@@ -5,7 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="2_mooak"]
 [ext_resource type="Texture2D" uid="uid://dydqerb208aw7" path="res://assets/Backround/sala_skt_v01.jpg" id="2_rftcv"]
 [ext_resource type="Script" uid="uid://csx4tcr0is2sx" path="res://Scripts/acceso_baño.gd" id="3_accbano"]
+[ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="6_lxna7"]
 [ext_resource type="Script" uid="uid://8dnpjy521828" path="res://Scripts/acceso_cocina.gd" id="6_rftcv"]
+[ext_resource type="Script" uid="uid://dr82qrhlwc8k5" path="res://Scripts/assassin.gd" id="8_3sxku"]
+[ext_resource type="Texture2D" uid="uid://2xrsaqaaclgy" path="res://assets/characters/asesino.01.png" id="8_frm4x"]
+[ext_resource type="FontFile" uid="uid://bvcjpp5q1mxo4" path="res://font/font/Roboto-BlackItalic.ttf" id="10_va7o6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 radius = 96.25487
@@ -13,6 +17,8 @@ radius = 96.25487
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_44saq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bghhj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
 
 [node name="Sala_Principal" type="Node2D" unique_id=1201324041]
 script = ExtResource("1_tn55x")
@@ -41,6 +47,8 @@ offset_left = 631.0
 offset_top = 930.0
 offset_right = 1222.0
 offset_bottom = 979.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_lxna7")
 theme_override_font_sizes/font_size = 35
 text = "Presionar \"Tecla\" para interacturar"
 
@@ -150,6 +158,28 @@ script = ExtResource("6_rftcv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="acceso_cocina" unique_id=967604065]
 scale = Vector2(8.827414, 8.827414)
 shape = SubResource("CircleShape2D_bghhj")
+
+[node name="assassin" type="CharacterBody2D" parent="." unique_id=1264064862]
+position = Vector2(594, 800)
+script = ExtResource("8_3sxku")
+
+[node name="assassinSprite" type="Sprite2D" parent="assassin" unique_id=267463427]
+scale = Vector2(0.20371017, 0.20371017)
+texture = ExtResource("8_frm4x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="assassin" unique_id=1864553211]
+position = Vector2(-5, 52)
+scale = Vector2(3.69072, 0.9468713)
+shape = SubResource("RectangleShape2D_44saq")
+
+[node name="Label" type="Label" parent="assassin" unique_id=1988161562]
+offset_left = 702.0
+offset_top = -776.0
+offset_right = 742.0
+offset_bottom = -740.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_va7o6")
+theme_override_font_sizes/font_size = 30
 
 [connection signal="body_entered" from="acceso_baño" to="CharacterBody2D" method="player_collision_with_object"]
 [connection signal="body_exited" from="acceso_baño" to="CharacterBody2D" method="player_quit_collision_area"]

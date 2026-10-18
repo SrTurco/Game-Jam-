@@ -1,8 +1,9 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792303779
+::res://::1792335822
 icon.svg::CompressedTexture2D::1536055607697131033::1792287559::1792290732::1::::<><><>0<>0<>c429cb124f12997c7ef25b86060706f2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1792287559::0::1::::<><><>0<>0<><>::
-::res://assets/::1792303797
+::res://assets/::1792349201
+Meu-de-inicio.ogv::VideoStreamTheora::4349300678906572981::1792342779::0::1::::<><><>0<>0<><>::
 ::res://assets/Backround/::1792303657
 cocina_skt_v01.jpg::CompressedTexture2D::8730812437727838498::1792302887::1792303657::1::::<><><>0<>0<>edfe3ca2ac1539621cfd74283e7fab54<>res://.godot/imported/cocina_skt_v01.jpg-a0b54f269dc4a84717e354c83b88091f.ctex::
 FG_MINIJUEGOS_V01.png::CompressedTexture2D::3341421596409174445::1792302887::1792303657::1::::<><><>0<>0<>20fe208a2c0b7de32cf8a660900c7d59<>res://.godot/imported/FG_MINIJUEGOS_V01.png-dd4bd8f3dfd05d142a9356bbc36c92b9.ctex::
@@ -12,13 +13,13 @@ sotano_skt_v01.jpg::CompressedTexture2D::6302237761134672015::1792302887::179230
 toilet_skt_v01.jpg::CompressedTexture2D::4027557406099623462::1792302887::1792303657::1::::<><><>0<>0<>20bb3dec480b07f4b37cc7a728ee69b7<>res://.godot/imported/toilet_skt_v01.jpg-9536eb3d133d030b0ec3cd4eee3ecdcc.ctex::
 VEREDA_AMIGABLE_V01.png::CompressedTexture2D::8352416058540288733::1792302887::1792303657::1::::<><><>0<>0<>c238c159b4f20272a75a23769cfa8919<>res://.godot/imported/VEREDA_AMIGABLE_V01.png-7885b7ee34d7803801d703662a4700b3.ctex::
 VEREDA_SINIESTRA_V01.png::CompressedTexture2D::6492377932863317046::1792302887::1792303657::1::::<><><>0<>0<>af63d5a59f8db65df1802800d7e4fca0<>res://.godot/imported/VEREDA_SINIESTRA_V01.png-8a12db89d6c831077c7b28902e76573b.ctex::
-::res://assets/botones/::1792303801
+::res://assets/botones/::1792303817
 boton EXIT.png::CompressedTexture2D::2744518691775551494::1792303801::1792303817::1::::<><><>0<>0<>7f9a6d0fb1b27c1c80f6fae3b3665736<>res://.godot/imported/boton EXIT.png-b5801f39955a16379c7bd5f7714b4822.ctex::
 boton MAIN MENU.png::CompressedTexture2D::5186212323372362051::1792303801::1792303817::1::::<><><>0<>0<>ddf177a15290e8aa9c86b736fd2de7b9<>res://.godot/imported/boton MAIN MENU.png-4c33b7e29e12940415ab294e58fc524f.ctex::
 boton play.png::CompressedTexture2D::2226763922202440216::1792303801::1792303817::1::::<><><>0<>0<>3c1702476e96dd6010f34280b41821fa<>res://.godot/imported/boton play.png-f1ed971497fc58ac12593042c7c55ad0.ctex::
 boton REPLAY.png::CompressedTexture2D::3773507779841486632::1792303801::1792303817::1::::<><><>0<>0<>98827b737057b24c536a08e97237a94a<>res://.godot/imported/boton REPLAY.png-fcca630555031dc02eba05783a9fcd60.ctex::
 boton SETTINGS.png::CompressedTexture2D::8863584585517520566::1792303801::1792303817::1::::<><><>0<>0<>faaa4f1ac6f0ef776bf2a7346836ddcb<>res://.godot/imported/boton SETTINGS.png-0c797c974daece61ad2cc226c62636fa.ctex::
-::res://assets/canillas/::1792303656
+::res://assets/canillas/::1792342490
 CANILLA.png::CompressedTexture2D::1930867991212731227::1792302887::1792303656::1::::<><><>0<>0<>0b367c543ce033aae4c70a0016acde56<>res://.godot/imported/CANILLA.png-e43166c46eec494df3e5857fbcc04358.ctex::
 CANILLA_BASE.png::CompressedTexture2D::2558712350797354261::1792302887::1792303656::1::::<><><>0<>0<>cf473685b0ba6b2056bb74d6e064f26b<>res://.godot/imported/CANILLA_BASE.png-46fdd4700f8c37a0fd773ecaa4e52aaf.ctex::
 ::res://assets/characters/::1792303656
@@ -29,6 +30,20 @@ MASA_OPCION1_V01.png::CompressedTexture2D::3930519042428323742::1792302887::1792
 MASA_OPCION2_V01.png::CompressedTexture2D::5947597159135928088::1792302887::1792303656::1::::<><><>0<>0<>b5fb525a0b0f158a758b9d79da5f9b21<>res://.godot/imported/MASA_OPCION2_V01.png-75ae4bb22ea5caf0af93984da60e99fd.ctex::
 POXILINA_V01.png::CompressedTexture2D::1691894529063138709::1792302887::1792303656::1::::<><><>0<>0<>91d8d46a792068a1ec7d14e1ed493f5d<>res://.godot/imported/POXILINA_V01.png-c0aa918144f284ee2f6a955f627c4f3d.ctex::
 TUBERIA_ROTA.png::CompressedTexture2D::4196487752342981952::1792302887::1792303656::1::::<><><>0<>0<>fadff6eedf040427789dda4cb6bf9cac<>res://.godot/imported/TUBERIA_ROTA.png-6feed5427cc443102e68b0e5ea725719.ctex::
+::res://assets/minijuego escape/::1792349167
+::res://assets/MINIJUEGO_3/::1792349191
+DESTORNILLADOR.png::CompressedTexture2D::7716888177657335645::1792349191::1792349221::1::::<><><>0<>0<>f25ba65fbbb46dd7f81413ee9565537e<>res://.godot/imported/DESTORNILLADOR.png-32a227da64496efd9a7914c5c886c702.ctex::
+LLAVE_FRANCESA_V01.png::CompressedTexture2D::2129540728828225100::1792349191::1792349221::1::::<><><>0<>0<>89961b38167e5df64ba3c8cdb6907bf1<>res://.godot/imported/LLAVE_FRANCESA_V01.png-9adc2b43aba5a4485e49f7f67f5e6505.ctex::
+PARED_VENTILACION.png::CompressedTexture2D::897178316087642995::1792349191::1792349221::1::::<><><>0<>0<>38af7bc4a3a6217e28192a03d2d9ba48<>res://.godot/imported/PARED_VENTILACION.png-c9371d5e69d721239bdeccef5aef5b6a.ctex::
+PICO_LORO_V01.png::CompressedTexture2D::4571768526640694463::1792349191::1792349221::1::::<><><>0<>0<>19057a6432f7cf896fa4993e3d8282cb<>res://.godot/imported/PICO_LORO_V01.png-41b66429ea931dfa07ae72fad796ba52.ctex::
+TORNILLO_1.png::CompressedTexture2D::5585785897988561581::1792349191::1792349221::1::::<><><>0<>0<>5221c45acbcd4f9c9fa7907f9b483dfe<>res://.godot/imported/TORNILLO_1.png-ade8ec0a96035286e3d9b6a53428c4d2.ctex::
+TORNILLO_2.png::CompressedTexture2D::4775290667853174271::1792349191::1792349221::1::::<><><>0<>0<>c21c1651cd82e43c90912b5433315b4e<>res://.godot/imported/TORNILLO_2.png-f4c4a4dde583d9347f9ab5621a51f145.ctex::
+TORNILLO_3.png::CompressedTexture2D::1783358280977777861::1792349191::1792349221::1::::<><><>0<>0<>8e32ca97c84d9f66e42de26375bc9c61<>res://.godot/imported/TORNILLO_3.png-7641fcbe25ee534c1aa745368c80a152.ctex::
+TORNILLO_FRENTE.png::CompressedTexture2D::1293900450947540366::1792349191::1792349221::1::::<><><>0<>0<>5a3fd7bcd30b9442974bb72f357a2596<>res://.godot/imported/TORNILLO_FRENTE.png-9e05bd860553ccee7084cd29ec7d1a18.ctex::
+VENTILACION_V01.png::CompressedTexture2D::2941090773977764369::1792349191::1792349221::1::::<><><>0<>0<>4c832e2cce3436d6f3852d84d50075f9<>res://.godot/imported/VENTILACION_V01.png-3bd7de4436f2c5fc82412c9b41311906.ctex::
+::res://assets/progressbar/::1792339125
+107761.jpg::CompressedTexture2D::5027293761837414742::1792338831::1792338901::1::::<><><>0<>0<>d41b9a3b9de3203d115b0aeb441b2dd6<>res://.godot/imported/107761.jpg-ebf4765777e86b2df9e7fac4ca0762b4.ctex::
+107914.jpg::CompressedTexture2D::2568960514200098577::1792338865::1792338901::1::::<><><>0<>0<>9dcd9915a81ba3e2c130594bbdbc7e48<>res://.godot/imported/107914.jpg-d48a5d9a896d64e419bf6c8868a37e9b.ctex::
 ::res://assets/tubos/::1792303656
 TUBO_CODO_V02.png::CompressedTexture2D::4766708111546898903::1792302887::1792303656::1::::<><><>0<>0<>7c800477d2cf3251ad48b3a4d52451fa<>res://.godot/imported/TUBO_CODO_V02.png-f17065c948a24b19cdf3950f1195aea8.ctex::
 TUBO_PALO_V01.png::CompressedTexture2D::56517943318130746::1792302887::1792303655::1::::<><><>0<>0<>25584917465623aa9194231f6e371d9b<>res://.godot/imported/TUBO_PALO_V01.png-fcd1eab20704ca10aaa8db35bd263064.ctex::
@@ -38,18 +53,38 @@ TUBO_X_V01.png::CompressedTexture2D::1261557380891450738::1792302887::1792303655
 TUBO_CORRECTO.png::CompressedTexture2D::3233789305680541958::1792302887::1792303656::1::::<><><>0<>0<>cf814ad4e0ffc6c54029c79c6477b0c0<>res://.godot/imported/TUBO_CORRECTO.png-2640ed76be1ff2f5a03c9384d9bdc5ff.ctex::
 TUBO_INCORRECTO_01.png::CompressedTexture2D::8729831813877303495::1792302887::1792303656::1::::<><><>0<>0<>a2a32cf661bf611886194f3ad75494ec<>res://.godot/imported/TUBO_INCORRECTO_01.png-a4dc07383a52b366c6e1a9672b3c1ddc.ctex::
 TUBO_INCORRECTO_02.png::CompressedTexture2D::4535984119358475246::1792302887::1792303656::1::::<><><>0<>0<>e834fcaac42b54514b059584150a64f6<>res://.godot/imported/TUBO_INCORRECTO_02.png-754268d0041165120db8198991f68344.ctex::
-::res://Escenas/::1792303653
-baño_sala.tscn::PackedScene::9129103764237491805::1792303267::0::1::::<><><>0<>0<><>::uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://dt6y6e2bnwr8c::::res://Scripts/baño_sala.gd<>uid://d1truv84rw1rc::::res://Escenas/rotacion_de_tubos.tscn<>uid://bxm8jubq3k8gg::::res://assets/Backround/toilet_skt_v01.jpg<>uid://v5cu1276vqab::::res://icon.svg<>uid://dfuuvv8kwu6tr::::res://Scripts/back_to_living_room.gd
-cocina_sala.tscn::PackedScene::6489516623988334714::1792302887::0::1::::<><><>0<>0<><>::uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://dwnjg8juvd4w1::::res://assets/Backround/cocina_skt_v01.jpg<>uid://o1man1q4guqy::::res://Scripts/juego_parchear.gd<>uid://rrfrb24ugeib::::res://Escenas/parchearJuego.tscn<>uid://dfuuvv8kwu6tr::::res://Scripts/back_to_living_room.gd<>uid://bwlc2ypw78r27::::res://Scripts/sotano_room.gd
-menu_principal.tscn::PackedScene::6169973462032854795::1792293367::0::1::::<><><>0<>0<><>::uid://cxi5k0ag72ar8::::res://Scripts/menu_principal.gd<>uid://v5cu1276vqab::::res://icon.svg
-parchearJuego.tscn::PackedScene::1228638802703446385::1792302887::0::1::::<><><>0<>0<><>::uid://co6tl7d3medhv::::res://Scripts/parchear_juego.gd<>uid://di6f1vir0afbo::::res://assets/Backround/FONDO_MINIJUEGOS_V01.png<>uid://bnuuywxir0sy4::::res://assets/Backround/FG_MINIJUEGOS_V01.png<>uid://b012smoyap177::::res://assets/minijuego2/TUBERIA_ROTA.png<>uid://ydtixuhrmbb6::::res://assets/minijuego2/POXILINA_V01.png<>uid://cq0cb6bdd8d25::::res://assets/minijuego2/MASA_OPCION2_V01.png<>uid://bv88cr8faue11::::res://assets/minijuego2/MASA_OPCION1_V01.png
+::res://Escenas/::1792349054
+baño_sala.tscn::PackedScene::9129103764237491805::1792336292::0::1::::<><><>0<>0<><>::uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://dt6y6e2bnwr8c::::res://Scripts/baño_sala.gd<>uid://d1truv84rw1rc::::res://Escenas/rotacion_de_tubos.tscn<>uid://bxm8jubq3k8gg::::res://assets/Backround/toilet_skt_v01.jpg<>uid://v5cu1276vqab::::res://icon.svg<>uid://bvcjpp5q1mxo4::::res://font/font/Roboto-BlackItalic.ttf<>uid://dfuuvv8kwu6tr::::res://Scripts/back_to_living_room.gd
+cocina_sala.tscn::PackedScene::6489516623988334714::1792336293::0::1::::<><><>0<>0<><>::uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://dwnjg8juvd4w1::::res://assets/Backround/cocina_skt_v01.jpg<>uid://o1man1q4guqy::::res://Scripts/juego_parchear.gd<>uid://rrfrb24ugeib::::res://Escenas/parchearJuego.tscn<>uid://bmpyecw0tqea2::::res://font/font/Roboto-Italic.ttf<>uid://dfuuvv8kwu6tr::::res://Scripts/back_to_living_room.gd<>uid://bwlc2ypw78r27::::res://Scripts/sotano_room.gd
+menu_principal.tscn::PackedScene::6169973462032854795::1792342859::0::1::::<><><>0<>0<><>::uid://cxi5k0ag72ar8::::res://Scripts/menu_principal.gd<>uid://6ywqg17r0kay::::res://assets/botones/boton play.png<>uid://v5cu1276vqab::::res://icon.svg<>uid://bfdp27c7jklhm::::res://assets/botones/boton EXIT.png<>uid://b273l13khx04p::::res://assets/Meu-de-inicio.ogv
+parchearJuego.tscn::PackedScene::1228638802703446385::1792303959::0::1::::<><><>0<>0<><>::uid://co6tl7d3medhv::::res://Scripts/parchear_juego.gd<>uid://di6f1vir0afbo::::res://assets/Backround/FONDO_MINIJUEGOS_V01.png<>uid://bnuuywxir0sy4::::res://assets/Backround/FG_MINIJUEGOS_V01.png<>uid://b012smoyap177::::res://assets/minijuego2/TUBERIA_ROTA.png<>uid://ydtixuhrmbb6::::res://assets/minijuego2/POXILINA_V01.png<>uid://cq0cb6bdd8d25::::res://assets/minijuego2/MASA_OPCION2_V01.png<>uid://bv88cr8faue11::::res://assets/minijuego2/MASA_OPCION1_V01.png
 pause_menu.tscn::PackedScene::1594886606716670443::1792287559::0::1::::<><><>0<>0<><>::uid://bqvb2brqyigjp::::res://Scripts/pause_menu.gd<>uid://v5cu1276vqab::::res://icon.svg
 player.tscn::PackedScene::8359551973919545920::1792302887::0::1::::<><><>0<>0<><>::uid://ua03udkh0maf::::res://Scripts/playerScript.gd<>uid://davc3l3lnyptb::::res://assets/characters/plomero.01.png
+laberinto.tscn::PackedScene::7321426010210577372::1792342817::0::1::::<><><>0<>0<><>::uid://di6f1vir0afbo::::res://assets/Backround/FONDO_MINIJUEGOS_V01.png<>uid://bmcqbjibxaf0q::::res://assets/tubos/laberinto/TUBO_CORRECTO.png<>uid://dwm2b4bivl4g6::::res://assets/tubos/laberinto/TUBO_INCORRECTO_01.png<>uid://b5vi84cggtl5o::::res://assets/tubos/laberinto/TUBO_INCORRECTO_02.png<>uid://bnuuywxir0sy4::::res://assets/Backround/FG_MINIJUEGOS_V01.png<>uid://bcppvbc4rmogb::::res://assets/canillas/CANILLA_BASE.png<>uid://cdvi18t760rik::::res://assets/progressbar/107761.jpg<>uid://bcuon0oe3b0kr::::res://assets/progressbar/107914.jpg<>uid://2rld4pll0cfr::::res://assets/canillas/CANILLA.png
+ventilacion_juego.tscn::PackedScene::1543359823905331526::1792349054::0::1::::<><><>0<>0<><>::uid://cmkadb1fhx83v::::res://Scripts/ventilacion_juego.gd<>uid://v5cu1276vqab::::res://icon.svg
 rotacion_de_tubos.tscn::PackedScene::9024464223060547788::1792303653::0::1::::<><><>0<>0<><>::uid://b42iw407sqhes::::res://Scripts/rotacion_de_tubos.gd<>uid://di6f1vir0afbo::::res://assets/Backround/FONDO_MINIJUEGOS_V01.png<>uid://2m3vwsqse0i::::res://assets/tubos/TUBO_PALO_V01.png<>uid://bnuuywxir0sy4::::res://assets/Backround/FG_MINIJUEGOS_V01.png<>uid://cxskqtmtf5url::::res://assets/tubos/TUBO_T_V02.png<>uid://2rld4pll0cfr::::res://assets/canillas/CANILLA.png<>uid://b86a8sarxoutb::::res://assets/tubos/TUBO_CODO_V02.png<>uid://r8dwvusjkste::::res://assets/tubos/TUBO_X_V01.png
-sala_principal.tscn::PackedScene::5365684614122833788::1792303653::0::1::::<><><>0<>0<><>::uid://jktq2clkxogd::::res://Scripts/sala_principal.gd<>uid://wytsxdqxm2ot::::res://Escenas/pause_menu.tscn<>uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://dydqerb208aw7::::res://assets/Backround/sala_skt_v01.jpg<>uid://csx4tcr0is2sx::::res://Scripts/acceso_baño.gd<>uid://8dnpjy521828::::res://Scripts/acceso_cocina.gd
-sotano_sala.tscn::PackedScene::7824029445848889200::1792302887::0::1::::<><><>0<>0<><>::uid://cv1362bosiaff::::res://assets/Backround/sotano_skt_v01.jpg<>uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://v5cu1276vqab::::res://icon.svg<>uid://cmkadb1fhx83v::::res://Scripts/ventilacion_juego.gd
+sala_principal.tscn::PackedScene::5365684614122833788::1792337682::0::1::::<><><>0<>0<><>::uid://jktq2clkxogd::::res://Scripts/sala_principal.gd<>uid://wytsxdqxm2ot::::res://Escenas/pause_menu.tscn<>uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://dydqerb208aw7::::res://assets/Backround/sala_skt_v01.jpg<>uid://csx4tcr0is2sx::::res://Scripts/acceso_baño.gd<>uid://bmpyecw0tqea2::::res://font/font/Roboto-Italic.ttf<>uid://8dnpjy521828::::res://Scripts/acceso_cocina.gd<>uid://dr82qrhlwc8k5::::res://Scripts/assassin.gd<>uid://2xrsaqaaclgy::::res://assets/characters/asesino.01.png<>uid://bvcjpp5q1mxo4::::res://font/font/Roboto-BlackItalic.ttf
+sotano_sala.tscn::PackedScene::7824029445848889200::1792338424::0::1::::<><><>0<>0<><>::uid://cv1362bosiaff::::res://assets/Backround/sotano_skt_v01.jpg<>uid://drdounhhos7qq::::res://Escenas/player.tscn<>uid://v5cu1276vqab::::res://icon.svg<>uid://cmkadb1fhx83v::::res://Scripts/ventilacion_juego.gd<>uid://bmpyecw0tqea2::::res://font/font/Roboto-Italic.ttf<>uid://dcks21ee56j77::::res://Escenas/laberinto.tscn
 tutorial.tscn::PackedScene::9084343594137706438::1792287559::0::1::::<><><>0<>0<><>::uid://bugsdyi4ue7xr::::res://Scripts/tutorial.gd<>uid://v5cu1276vqab::::res://icon.svg
-::res://Scripts/::1792303653
+::res://font/::1792335860
+::res://font/font/::1792335870
+Roboto-Black.ttf::FontFile::5146036645681096868::1792335854::1792335870::1::::<><><>0<>0<>6f43e97dcf1be66d6829c2eb5cee176f<>res://.godot/imported/Roboto-Black.ttf-62fd70b8ea7cbd17bbc4f54b722fe770.fontdata::
+Roboto-BlackItalic.ttf::FontFile::3865089230399967189::1792335854::1792335870::1::::<><><>0<>0<>d2627d85ebbcdbdfa74c4abdac311b69<>res://.godot/imported/Roboto-BlackItalic.ttf-23ca39c0a8ad4319fafe980b1869594c.fontdata::
+Roboto-Bold.ttf::FontFile::1192595556829942417::1792335854::1792335870::1::::<><><>0<>0<>9abd2cf8dc65228bff67e3edc33e25e7<>res://.godot/imported/Roboto-Bold.ttf-2fe31de68b67e88f0d2eb99ca2d1262f.fontdata::
+Roboto-BoldCondensed.ttf::FontFile::4582890578587100432::1792335854::1792335870::1::::<><><>0<>0<>f2afd922769da874219fb7a6bf910236<>res://.godot/imported/Roboto-BoldCondensed.ttf-d99a2856b3a7c1f0be6c2fed32646ec5.fontdata::
+Roboto-BoldCondensedItalic.ttf::FontFile::807770844661684265::1792335854::1792335870::1::::<><><>0<>0<>06638d8752801a26c5913691bc9ce638<>res://.godot/imported/Roboto-BoldCondensedItalic.ttf-2f841b3658e3297e8f8dd33bfe919161.fontdata::
+Roboto-BoldItalic.ttf::FontFile::7124002415180512336::1792335854::1792335870::1::::<><><>0<>0<>f6045d543089d9af56cd503fb44f3974<>res://.godot/imported/Roboto-BoldItalic.ttf-56025ec4cae37d19fceacc880dd67813.fontdata::
+Roboto-Condensed.ttf::FontFile::7608464729120494004::1792335854::1792335870::1::::<><><>0<>0<>ea91192d62e0daa045c8cb5539237eb7<>res://.godot/imported/Roboto-Condensed.ttf-5367c19d6eee12c4a7c3267e4e015601.fontdata::
+Roboto-CondensedItalic.ttf::FontFile::5761531441375114862::1792335854::1792335870::1::::<><><>0<>0<>c17f9782bd0ef6a107d677476803168c<>res://.godot/imported/Roboto-CondensedItalic.ttf-dcedb3873cbdc5324a40c9947ceeab1b.fontdata::
+Roboto-Italic.ttf::FontFile::3261116964856707963::1792335854::1792335870::1::::<><><>0<>0<>10e7fa9f436a9f3a40039ffe2de40929<>res://.godot/imported/Roboto-Italic.ttf-699f4426129fbc4f410d574a7088d276.fontdata::
+Roboto-Light.ttf::FontFile::2612089590143852649::1792335854::1792335870::1::::<><><>0<>0<>cfb1ff522b6f0036216f1bc7fa5f2d44<>res://.godot/imported/Roboto-Light.ttf-ee3328b08a4a3883728d72a5b829884e.fontdata::
+Roboto-LightItalic.ttf::FontFile::1628902665993773866::1792335854::1792335870::1::::<><><>0<>0<>848e99d3acc3becb286d830ce1cd3d6c<>res://.godot/imported/Roboto-LightItalic.ttf-74f4f6cb7dae59176a65f6532438a2a7.fontdata::
+Roboto-Medium.ttf::FontFile::719973651536008936::1792335854::1792335870::1::::<><><>0<>0<>cbd608903373c9184b11c6ed2f918ec2<>res://.godot/imported/Roboto-Medium.ttf-54df4232edb90e2062e1b22dade7dbd8.fontdata::
+Roboto-MediumItalic.ttf::FontFile::797246857445701919::1792335855::1792335870::1::::<><><>0<>0<>c0dd452e663bb03a8efaa2f4638ea3c1<>res://.godot/imported/Roboto-MediumItalic.ttf-a86151dbaabb19a96c8d26d2f88084de.fontdata::
+Roboto-Regular.ttf::FontFile::6985703323780604708::1792335855::1792335870::1::::<><><>0<>0<>4a660899e3fd028026ee9cc635f7ac5e<>res://.godot/imported/Roboto-Regular.ttf-8d6c62f20b98b99a68dfe35b3886ddbd.fontdata::
+Roboto-Thin.ttf::FontFile::8725165444337891333::1792335855::1792335870::1::::<><><>0<>0<>6788c74d7c970154b7493184f145b22f<>res://.godot/imported/Roboto-Thin.ttf-bac2f4baf18f38245359421a275a2f2a.fontdata::
+Roboto-ThinItalic.ttf::FontFile::6594173229744512740::1792335855::1792335870::1::::<><><>0<>0<>2b35bdc156b84c42d2d1fd7741ea277e<>res://.godot/imported/Roboto-ThinItalic.ttf-17b1eb234440ae640af3d6910c558c48.fontdata::
+::res://Scripts/::1792338268
 acceso_baño.gd::GDScript::6085516096544271319::1792302887::0::1::::<>Area2D<><>0<>0<><>::
 acceso_cocina.gd::GDScript::2323241592317447547::1792302887::0::1::::<>Area2D<><>0<>0<><>::
 back_to_living_room.gd::GDScript::7552746820331467667::1792302887::0::1::::<>Area2D<><>0<>0<><>::
@@ -59,9 +94,10 @@ global_pause.gd::GDScript::1933935311805439696::1792287559::0::1::::<>Node<><>0<
 juego_parchear.gd::GDScript::1037046960185651848::1792302887::0::1::::<>Area2D<><>0<>0<><>::
 menu_inicio.gd::GDScript::653526987582066495::1792287559::0::1::::<>Node2D<><>0<>0<><>::
 menu_principal.gd::GDScript::6405540474215658747::1792287559::0::1::::<>Node2D<><>0<>0<><>::
-parchear_juego.gd::GDScript::5820655841960031919::1792302887::0::1::::<>Node2D<><>0<>0<><>::
+parchear_juego.gd::GDScript::5820655841960031919::1792337466::0::1::::<>Node2D<><>0<>0<><>::
 pause_menu.gd::GDScript::3552903127709458905::1792287559::0::1::::<>Node2D<><>0<>0<><>::
-playerScript.gd::GDScript::1405345855375267565::1792303338::0::1::::<>CharacterBody2D<><>0<>0<><>::
+playerScript.gd::GDScript::1405345855375267565::1792338268::0::1::::<>CharacterBody2D<><>0<>0<><>::
+assassin.gd::GDScript::8422265694556888710::1792337729::0::1::::<>CharacterBody2D<><>0<>0<><>::
 rotacion_de_tubos.gd::GDScript::4478161935239582870::1792303653::0::1::::<>Node2D<><>0<>0<><>::
 sala_principal.gd::GDScript::653526987582066495::1792302887::0::1::::<>Node2D<><>0<>0<><>::
 sotano_room.gd::GDScript::3953454334221565570::1792302887::0::1::::<>Area2D<><>0<>0<><>::
