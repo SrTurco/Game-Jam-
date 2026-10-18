@@ -15,7 +15,7 @@ texture = ExtResource("1_db4s7")
 metadata/_edit_lock_ = true
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_fw0b8")]
-position = Vector2(244, 73)
+position = Vector2(1320, 447)
 
 [node name="ventilacion juego" type="Node2D" parent="." unique_id=1049194941]
 position = Vector2(394, 732)

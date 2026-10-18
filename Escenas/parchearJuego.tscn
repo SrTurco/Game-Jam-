@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://rrfrb24ugeib"]
 
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="1_5tkhd"]
+[ext_resource type="Script" uid="uid://co6tl7d3medhv" path="res://Scripts/parchear_juego.gd" id="1_7tslx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
 
@@ -13,13 +14,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_54ioy"]
 
 [node name="parchear" type="Node2D" unique_id=466163402]
+script = ExtResource("1_7tslx")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1045043370]
+[node name="pipe" type="Sprite2D" parent="." unique_id=1045043370]
 position = Vector2(967.99994, 539)
 scale = Vector2(12.074364, 4.3386173)
 texture = ExtResource("1_5tkhd")
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1085497605]
+[node name="Epoxi" type="TextureButton" parent="." unique_id=1085497605]
 offset_left = 1603.0
 offset_top = 809.0
 offset_right = 1731.0
@@ -27,47 +29,56 @@ offset_bottom = 937.0
 scale = Vector2(1.6016243, 1.6016243)
 texture_normal = ExtResource("1_5tkhd")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=544739995]
+[node name="hole 1" type="Area2D" parent="." unique_id=544739995]
 position = Vector2(623, 288)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2033234197]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hole 1" unique_id=2033234197]
 scale = Vector2(7.392761, 4.095232)
 shape = SubResource("RectangleShape2D_44saq")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=546476434]
+[node name="holefixed1" type="Sprite2D" parent="hole 1" unique_id=546476434 groups=["holes_fixed"]]
+visible = false
 
-[node name="Area2D2" type="Area2D" parent="." unique_id=2061858580]
+[node name="hole 2" type="Area2D" parent="." unique_id=2061858580]
 position = Vector2(381, 654)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1554113247]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hole 2" unique_id=1554113247]
 scale = Vector2(6.460183, -3.7400467)
 shape = SubResource("RectangleShape2D_bghhj")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D2" unique_id=955084363]
+[node name="holefixed2" type="Sprite2D" parent="hole 2" unique_id=955084363 groups=["holes_fixed"]]
+visible = false
 
-[node name="Area2D3" type="Area2D" parent="." unique_id=965315855]
+[node name="hole 3" type="Area2D" parent="." unique_id=965315855]
 position = Vector2(851, 482)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=59027404]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hole 3" unique_id=59027404]
 scale = Vector2(6.4366236, 3.6414697)
 shape = SubResource("RectangleShape2D_jsphu")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D3" unique_id=14985997]
+[node name="holefixed3" type="Sprite2D" parent="hole 3" unique_id=14985997 groups=["holes_fixed"]]
+visible = false
 
-[node name="Area2D4" type="Area2D" parent="." unique_id=841426959]
+[node name="hole 4" type="Area2D" parent="." unique_id=841426959]
 position = Vector2(1043, 721)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4" unique_id=1019820484]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hole 4" unique_id=1019820484]
 scale = Vector2(7.1013184, 3.40283)
 shape = SubResource("RectangleShape2D_ony7f")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D4" unique_id=1133976247]
+[node name="holefixed4" type="Sprite2D" parent="hole 4" unique_id=1133976247 groups=["holes_fixed"]]
+visible = false
 
-[node name="Area2D5" type="Area2D" parent="." unique_id=390359351]
+[node name="hole 5" type="Area2D" parent="." unique_id=390359351]
 position = Vector2(1502, 529)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5" unique_id=1652767457]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hole 5" unique_id=1652767457]
 scale = Vector2(8.767035, 4.005067)
 shape = SubResource("RectangleShape2D_54ioy")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D5" unique_id=901396586]
+[node name="holefixed5" type="Sprite2D" parent="hole 5" unique_id=901396586 groups=["holes_fixed"]]
+visible = false
+
+[connection signal="pressed" from="Epoxi" to="." method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="hole 1" to="." method="_on_hole_1_mouse_entered"]
+[connection signal="mouse_exited" from="hole 1" to="." method="_on_hole_1_mouse_exited"]

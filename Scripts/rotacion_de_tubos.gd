@@ -56,7 +56,7 @@ func tubosConectados():
 	
 	# Si llegamos acá, todos los tubos están en la posición correcta
 	miniCompletado = true
-	print("¡Minijuego completado!")
+	
 	if miniCompletado:
 		GlobalInteractuable.bañoMinijuego = true
 		self.global_position = Vector2(-1370, -1000)

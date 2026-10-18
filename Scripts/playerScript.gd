@@ -1,5 +1,4 @@
 extends CharacterBody2D
-@onready var root = get_node("/root/Root")
 
 @onready var label = $"../Label"
 const SPEED = 450
@@ -23,7 +22,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		var search_query = "Godot Engine tutorial en español"
 		open_google_search(search_query)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	
 	playerPosition = self.global_position
 	
@@ -31,7 +30,7 @@ func _process(delta: float) -> void:
 		objeto_actual.accionar()
 		print("accionado")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direccion = Input.get_vector("left", "right", "up", "down")
 	
 	if direccion:
@@ -47,38 +46,47 @@ func interactuable(objeto):
 	objeto_actual = objeto
 
 # Al entrar a la colission de tal objeto (aun no se sabe el objeto)
-func player_collision_with_object(body: CharacterBody2D):
+func player_collision_with_object(_body: CharacterBody2D):
 	label.text = "Press E to go to the bathroom"
 	label.show()
 	interactuable($"../acceso_baño")
 
-func player_quit_collision_area(body: CharacterBody2D):
+func player_quit_collision_area(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
 
-func _on_juego_tubos_body_entered(body: CharacterBody2D):
+func _on_juego_tubos_body_entered(_body: CharacterBody2D):
 	label.text = "Press E to interact"
 	label.show()
 	interactuable($"../rotacion de tubos")
 
-func _on_juego_tubos_body_exited(body: CharacterBody2D):
+func _on_juego_tubos_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
 
-func _on_back_to_living_room_body_entered(body):
+func _on_back_to_living_room_body_entered(_body: CharacterBody2D):
 	label.text = "Press E to interact"
 	label.show()
 	interactuable($"../backToLivingRoom")
 
-func _on_back_to_living_room_body_exited(body):
+func _on_back_to_living_room_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
 
-func _on_juego_parchear_body_entered(body):
+func _on_juego_parchear_body_entered(_body: CharacterBody2D):
 	label.text = "Press E to interact"
 	label.show()
 	interactuable($"../backToLivingRoom")
 
-func _on_juego_parchear_body_exited(body):
+func _on_juego_parchear_body_exited(_body: CharacterBody2D):
+	label.hide()
+	objeto_actual = null
+
+func _on_acceso_cocina_body_entered(_body: CharacterBody2D):
+	label.text = "Press E to got to the Kitchen"
+	label.show()
+	interactuable($"../acceso_cocina")
+
+func _on_acceso_cocina_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null

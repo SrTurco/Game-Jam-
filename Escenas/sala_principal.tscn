@@ -5,11 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="2_mooak"]
 [ext_resource type="Texture2D" uid="uid://dydqerb208aw7" path="res://assets/Backround/sala_skt_v01.jpg" id="2_rftcv"]
 [ext_resource type="Script" uid="uid://csx4tcr0is2sx" path="res://Scripts/acceso_baño.gd" id="3_accbano"]
+[ext_resource type="Script" uid="uid://8dnpjy521828" path="res://Scripts/acceso_cocina.gd" id="6_rftcv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 radius = 96.25487
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_44saq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bghhj"]
 
 [node name="Sala_Principal" type="Node2D" unique_id=1201324041]
 script = ExtResource("1_tn55x")
@@ -140,5 +143,15 @@ rotation = 0.9285825
 scale = Vector2(7.122908, 58.73422)
 shape = SubResource("SegmentShape2D_44saq")
 
+[node name="acceso_cocina" type="Area2D" parent="." unique_id=976096244]
+position = Vector2(1554, 484)
+script = ExtResource("6_rftcv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="acceso_cocina" unique_id=967604065]
+scale = Vector2(8.827414, 8.827414)
+shape = SubResource("CircleShape2D_bghhj")
+
 [connection signal="body_entered" from="acceso_baño" to="CharacterBody2D" method="player_collision_with_object"]
 [connection signal="body_exited" from="acceso_baño" to="CharacterBody2D" method="player_quit_collision_area"]
+[connection signal="body_entered" from="acceso_cocina" to="CharacterBody2D" method="_on_acceso_cocina_body_entered"]
+[connection signal="body_exited" from="acceso_cocina" to="CharacterBody2D" method="_on_acceso_cocina_body_exited"]
