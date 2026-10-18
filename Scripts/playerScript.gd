@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var root = get_node("/root/Root")
 
 @onready var label = $"../Label"
 const SPEED = 450
@@ -9,6 +10,18 @@ var objeto_actual = null
 
 func _ready():
 	label.hide()
+
+func open_google_search(query: String) -> void:
+	var base_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	var encoded_query = query.uri_encode()
+	var full_url = base_url + encoded_query
+	var _err = OS.shell_open(full_url)
+
+func _unhandled_input(event: InputEvent) -> void:
+
+	if event.is_action_pressed("open_google"):
+		var search_query = "Godot Engine tutorial en español"
+		open_google_search(search_query)
 
 func _process(delta: float) -> void:
 	

@@ -1,12 +1,3 @@
-res://Scripts/sala_principal.gd
-res://Scripts/playerScript.gd
 res://Escenas/baño_sala.tscn
-res://Scripts/rotacion_de_tubos.gd
-res://Scripts/baño_sala.gd
-res://Scripts/back_to_living_room.gd
-res://Escenas/cocina_sala.tscn
-res://Scripts/juego_parchear.gd
-res://Escenas/sala_principal.tscn
-res://Escenas/rotacion_de_tubos.tscn
-res://Escenas/menu_principal.tscn
 res://Scripts/GlobalInteractuable.gd
+res://Scripts/playerScript.gd
