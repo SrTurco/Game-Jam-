@@ -25,7 +25,7 @@ shape = SubResource("CircleShape2D_44saq")
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1931158594]
 texture = ExtResource("3_l6tan")
 
-[node name="label" type="Label" parent="." unique_id=1198833265]
+[node name="Label" type="Label" parent="." unique_id=1198833265]
 visible = false
 offset_left = 631.0
 offset_top = 930.0
