@@ -4,14 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://dwnjg8juvd4w1" path="res://assets/Backround/cocina_skt_v01.jpg" id="2_7gxgc"]
 [ext_resource type="Script" uid="uid://o1man1q4guqy" path="res://Scripts/juego_parchear.gd" id="3_rd7kc"]
 [ext_resource type="PackedScene" uid="uid://rrfrb24ugeib" path="res://Escenas/parchearJuego.tscn" id="3_rpgpt"]
-[ext_resource type="Script" uid="uid://co6tl7d3medhv" path="res://Scripts/parchear_juego.gd" id="4_h0cdg"]
 [ext_resource type="Script" uid="uid://dfuuvv8kwu6tr" path="res://Scripts/back_to_living_room.gd" id="6_3sr5w"]
+[ext_resource type="Script" uid="uid://bwlc2ypw78r27" path="res://Scripts/sotano_room.gd" id="6_hq138"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_44saq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hq138"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bghhj"]
 
 [node name="Node2D" type="Node2D" unique_id=1085568832]
 
@@ -69,8 +71,7 @@ scale = Vector2(5.052166, 43.182297)
 shape = SubResource("SegmentShape2D_44saq")
 
 [node name="parchear" parent="." unique_id=466163402 instance=ExtResource("3_rpgpt")]
-position = Vector2(-2265, 0)
-script = ExtResource("4_h0cdg")
+position = Vector2(-2137, 0)
 
 [node name="juego parchear" type="Area2D" parent="." unique_id=349399154]
 position = Vector2(563, 495)
@@ -83,7 +84,7 @@ scale = Vector2(10.963876, 10.840126)
 shape = SubResource("CircleShape2D_44saq")
 
 [node name="backToLivingRoom" type="Area2D" parent="." unique_id=1085355785]
-position = Vector2(1549, 920)
+position = Vector2(165, 879)
 script = ExtResource("6_3sr5w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backToLivingRoom" unique_id=949161148]
@@ -91,7 +92,24 @@ position = Vector2(66, 57)
 scale = Vector2(9.225977, 6.44097)
 shape = SubResource("RectangleShape2D_hq138")
 
+[node name="Label" type="Label" parent="." unique_id=533327935]
+offset_left = 722.0
+offset_top = 891.0
+offset_right = 762.0
+offset_bottom = 933.0
+theme_override_font_sizes/font_size = 30
+
+[node name="sotanoRoom" type="Area2D" parent="." unique_id=1836212197]
+position = Vector2(1685, 497)
+script = ExtResource("6_hq138")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sotanoRoom" unique_id=1744857081]
+scale = Vector2(12.898143, 12.898143)
+shape = SubResource("CircleShape2D_bghhj")
+
 [connection signal="body_entered" from="juego parchear" to="CharacterBody2D" method="_on_juego_parchear_body_entered"]
 [connection signal="body_exited" from="juego parchear" to="CharacterBody2D" method="_on_juego_parchear_body_exited"]
 [connection signal="body_entered" from="backToLivingRoom" to="CharacterBody2D" method="_on_back_to_living_room_body_entered"]
 [connection signal="body_exited" from="backToLivingRoom" to="CharacterBody2D" method="_on_back_to_living_room_body_exited"]
+[connection signal="body_entered" from="sotanoRoom" to="CharacterBody2D" method="_on_sotano_room_body_entered"]
+[connection signal="body_exited" from="sotanoRoom" to="CharacterBody2D" method="_on_sotano_room_body_exited"]

@@ -18,6 +18,7 @@ metadata/_edit_lock_ = true
 position = Vector2(1320, 447)
 
 [node name="ventilacion juego" type="Node2D" parent="." unique_id=1049194941]
+visible = false
 position = Vector2(394, 732)
 script = ExtResource("3_vljhc")
 

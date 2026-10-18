@@ -11,3 +11,5 @@ res://Scripts/juego_parchear.gd
 res://Scripts/acceso_cocina.gd
 res://Scripts/parchear_juego.gd
 res://Escenas/parchearJuego.tscn
+res://Escenas/player.tscn
+res://Scripts/sotano_room.gd

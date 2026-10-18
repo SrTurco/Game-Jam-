@@ -22,10 +22,10 @@ scale = Vector2(12.074364, 4.3386173)
 texture = ExtResource("1_5tkhd")
 
 [node name="Epoxi" type="TextureButton" parent="." unique_id=1085497605]
-offset_left = 1603.0
-offset_top = 809.0
-offset_right = 1731.0
-offset_bottom = 937.0
+offset_left = 1600.0
+offset_top = 810.0
+offset_right = 1728.0
+offset_bottom = 938.0
 scale = Vector2(1.6016243, 1.6016243)
 texture_normal = ExtResource("1_5tkhd")
 
@@ -38,6 +38,7 @@ shape = SubResource("RectangleShape2D_44saq")
 
 [node name="holefixed1" type="Sprite2D" parent="hole 1" unique_id=546476434 groups=["holes_fixed"]]
 visible = false
+texture = ExtResource("1_5tkhd")
 
 [node name="hole 2" type="Area2D" parent="." unique_id=2061858580]
 position = Vector2(381, 654)
@@ -48,6 +49,7 @@ shape = SubResource("RectangleShape2D_bghhj")
 
 [node name="holefixed2" type="Sprite2D" parent="hole 2" unique_id=955084363 groups=["holes_fixed"]]
 visible = false
+texture = ExtResource("1_5tkhd")
 
 [node name="hole 3" type="Area2D" parent="." unique_id=965315855]
 position = Vector2(851, 482)
@@ -58,6 +60,7 @@ shape = SubResource("RectangleShape2D_jsphu")
 
 [node name="holefixed3" type="Sprite2D" parent="hole 3" unique_id=14985997 groups=["holes_fixed"]]
 visible = false
+texture = ExtResource("1_5tkhd")
 
 [node name="hole 4" type="Area2D" parent="." unique_id=841426959]
 position = Vector2(1043, 721)
@@ -68,6 +71,7 @@ shape = SubResource("RectangleShape2D_ony7f")
 
 [node name="holefixed4" type="Sprite2D" parent="hole 4" unique_id=1133976247 groups=["holes_fixed"]]
 visible = false
+texture = ExtResource("1_5tkhd")
 
 [node name="hole 5" type="Area2D" parent="." unique_id=390359351]
 position = Vector2(1502, 529)
@@ -78,6 +82,7 @@ shape = SubResource("RectangleShape2D_54ioy")
 
 [node name="holefixed5" type="Sprite2D" parent="hole 5" unique_id=901396586 groups=["holes_fixed"]]
 visible = false
+texture = ExtResource("1_5tkhd")
 
 [connection signal="pressed" from="Epoxi" to="." method="_on_texture_button_pressed"]
 [connection signal="mouse_entered" from="hole 1" to="." method="_on_hole_1_mouse_entered"]

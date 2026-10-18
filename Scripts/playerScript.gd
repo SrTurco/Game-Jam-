@@ -45,7 +45,7 @@ func _physics_process(_delta):
 func interactuable(objeto):
 	objeto_actual = objeto
 
-# Al entrar a la colission de tal objeto (aun no se sabe el objeto)
+# colisiones de radares
 func player_collision_with_object(_body: CharacterBody2D):
 	label.text = "Press E to go to the bathroom"
 	label.show()
@@ -76,7 +76,7 @@ func _on_back_to_living_room_body_exited(_body: CharacterBody2D):
 func _on_juego_parchear_body_entered(_body: CharacterBody2D):
 	label.text = "Press E to interact"
 	label.show()
-	interactuable($"../backToLivingRoom")
+	interactuable($"../juego parchear")
 
 func _on_juego_parchear_body_exited(_body: CharacterBody2D):
 	label.hide()
@@ -88,5 +88,14 @@ func _on_acceso_cocina_body_entered(_body: CharacterBody2D):
 	interactuable($"../acceso_cocina")
 
 func _on_acceso_cocina_body_exited(_body: CharacterBody2D):
+	label.hide()
+	objeto_actual = null
+
+func _on_sotano_room_body_entered(_body: CharacterBody2D):
+	label.text = "Press E to got to the Basement"
+	label.show()
+	interactuable($"../sotanoRoom")
+
+func _on_sotano_room_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
