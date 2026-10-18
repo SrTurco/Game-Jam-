@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c48ih677og32b"]
+
+[ext_resource type="Script" uid="uid://dr82qrhlwc8k5" path="res://Scripts/assassin.gd" id="1_g5kpp"]
+[ext_resource type="Texture2D" uid="uid://2xrsaqaaclgy" path="res://assets/characters/asesino.01.png" id="2_4fgk1"]
+[ext_resource type="FontFile" uid="uid://bvcjpp5q1mxo4" path="res://font/font/Roboto-BlackItalic.ttf" id="3_ltfkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
+
+[node name="assassin" type="CharacterBody2D" unique_id=35008630]
+script = ExtResource("1_g5kpp")
+
+[node name="assassinSprite" type="Sprite2D" parent="." unique_id=1865679637]
+scale = Vector2(0.20371017, 0.20371017)
+texture = ExtResource("2_4fgk1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1877223216]
+position = Vector2(-5, 52)
+scale = Vector2(3.69072, 0.9468713)
+shape = SubResource("RectangleShape2D_44saq")
+
+[node name="Label" type="Label" parent="." unique_id=1257408923]
+offset_left = 702.0
+offset_top = -776.0
+offset_right = 742.0
+offset_bottom = -740.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ltfkv")
+theme_override_font_sizes/font_size = 30

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://drydewfk0cw1y"]
+
+[ext_resource type="VideoStream" uid="uid://cm1gx32bkwdr6" path="res://assets/Menu-Omar.ogv" id="1_2ditt"]
+[ext_resource type="Script" uid="uid://dsly3w8mc2dsb" path="res://Scripts/menu_omar.gd" id="1_lstyf"]
+
+[node name="Node2D" type="Node2D" unique_id=1052923522]
+script = ExtResource("1_lstyf")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=503153802]
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("1_2ditt")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1301993605]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

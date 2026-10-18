@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dcks21ee56j77"]
 
+[ext_resource type="Script" uid="uid://crqvhcy718lop" path="res://Scripts/laberinto.gd" id="1_eynge"]
 [ext_resource type="Texture2D" uid="uid://di6f1vir0afbo" path="res://assets/Backround/FONDO_MINIJUEGOS_V01.png" id="1_wscr7"]
 [ext_resource type="Texture2D" uid="uid://bmcqbjibxaf0q" path="res://assets/tubos/laberinto/TUBO_CORRECTO.png" id="2_hw6aa"]
 [ext_resource type="Texture2D" uid="uid://dwm2b4bivl4g6" path="res://assets/tubos/laberinto/TUBO_INCORRECTO_01.png" id="3_yc1ow"]
@@ -9,8 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://cdvi18t760rik" path="res://assets/progressbar/107761.jpg" id="7_qyt7a"]
 [ext_resource type="Texture2D" uid="uid://bcuon0oe3b0kr" path="res://assets/progressbar/107914.jpg" id="8_ndend"]
 [ext_resource type="Texture2D" uid="uid://2rld4pll0cfr" path="res://assets/canillas/CANILLA.png" id="9_ndend"]
+[ext_resource type="FontFile" uid="uid://bvcjpp5q1mxo4" path="res://font/font/Roboto-BlackItalic.ttf" id="11_w62f8"]
 
 [node name="laberinto" type="Node2D" unique_id=871257911]
+script = ExtResource("1_eynge")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1831365080]
 position = Vector2(961, 542)
@@ -29,6 +32,7 @@ fill_mode = 1
 show_percentage = false
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=1128268500]
+visible = false
 offset_left = 558.0
 offset_top = 14.999997
 offset_right = 686.0
@@ -95,5 +99,15 @@ texture = ExtResource("9_ndend")
 [node name="Fondo" type="Node2D" parent="." unique_id=1272461119]
 
 [node name="TimerProgressBar" type="Timer" parent="." unique_id=1006726857]
-wait_time = 40.0
+wait_time = 2.0
 one_shot = true
+
+[node name="Label" type="Label" parent="." unique_id=1515361602]
+offset_left = 634.0
+offset_top = 21.0
+offset_right = 674.0
+offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("11_w62f8")
+theme_override_font_sizes/font_size = 30
+
+[connection signal="timeout" from="TimerProgressBar" to="." method="_on_timer_progress_bar_timeout"]

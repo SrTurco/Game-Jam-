@@ -1,13 +1,13 @@
+Timer
 Node2D
+Label
+VideoStreamPlayer
+TextureButton
 CollisionShape2D
 Area2D
-Timer
-Label
 Sprite2D
-VideoStreamPlayer
 StaticBody2D
 TextureProgressBar
 ProgressBar
 CharacterBody2D
 Node
-TextureButton

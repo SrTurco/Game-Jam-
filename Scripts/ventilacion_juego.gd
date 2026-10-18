@@ -32,7 +32,6 @@ func _process(_delta: float) -> void:
 			picoLoro = false
 	
 
-
 func _input(event):
 	var mouse_pos: Vector2 = get_viewport().get_mouse_position()
 	
@@ -42,11 +41,10 @@ func _input(event):
 				var rect: Rect2 = $Area2D.get_rect()
 				var local_mouse_pos: Vector2 = $Area2D.to_local($Area2D.global_position + (mouse_pos - $Area2D.global_position))
 				if rect.has_point(local_mouse_pos):
-					get_tree().change_scene_to_file("")
+					get_tree().change_scene_to_file("res://Escenas/winEscena.tscn")
 	
 	if francesa:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
-			
 			for tornillo: Sprite2D in get_tree().get_nodes_in_group("tornillo_puesto"):
 				if tornillo.visible:
 					var rect: Rect2 = tornillo.get_rect()

@@ -1,11 +1,6 @@
-res://Escenas/sotano_sala.tscn
-res://Escenas/baño_sala.tscn
-res://Escenas/sala_principal.tscn
-res://Escenas/cocina_sala.tscn
-res://Scripts/assassin.gd
-res://Scripts/parchear_juego.gd
-res://Escenas/menu_principal.tscn
-res://Scripts/playerScript.gd
+res://Scripts/laberinto.gd
 res://Escenas/laberinto.tscn
-res://Scripts/ventilacion_juego.gd
-res://Escenas/ventilacion_juego.tscn
+res://Scripts/laberintojuego.gd
+res://Escenas/sotano_sala.tscn
+res://Scripts/cocina_sala_secuestro.gd
+res://Scripts/menu_principal.gd

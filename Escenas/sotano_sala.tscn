@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://djqave45035ls"]
 
-[ext_resource type="Texture2D" uid="uid://cv1362bosiaff" path="res://assets/Backround/sotano_skt_v01.jpg" id="1_db4s7"]
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_fw0b8"]
-[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_ru3cf"]
-[ext_resource type="Script" uid="uid://cmkadb1fhx83v" path="res://Scripts/ventilacion_juego.gd" id="3_vljhc"]
+[ext_resource type="Texture2D" uid="uid://daifhi0gwjd4p" path="res://assets/Backround/SOTANOBG_FINAL.png" id="1_vljhc"]
+[ext_resource type="PackedScene" uid="uid://v8u575s5x4le" path="res://Escenas/ventilacion_juego.tscn" id="3_vljhc"]
+[ext_resource type="Script" uid="uid://cnrey642ho20r" path="res://Scripts/laberintojuego.gd" id="5_e10ms"]
 [ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="5_vljhc"]
 [ext_resource type="PackedScene" uid="uid://dcks21ee56j77" path="res://Escenas/laberinto.tscn" id="6_e10ms"]
 
@@ -17,42 +17,14 @@
 
 [node name="SotanoSktV01" type="Sprite2D" parent="." unique_id=856020688]
 position = Vector2(960, 540)
-texture = ExtResource("1_db4s7")
+texture = ExtResource("1_vljhc")
 metadata/_edit_lock_ = true
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_fw0b8")]
 position = Vector2(1320, 447)
 
-[node name="ventilacion juego" type="Node2D" parent="." unique_id=1049194941]
-visible = false
-position = Vector2(394, 732)
-script = ExtResource("3_vljhc")
-
-[node name="herramientas" type="Node2D" parent="ventilacion juego" unique_id=1136013771]
-
-[node name="francesa" type="TextureButton" parent="ventilacion juego/herramientas" unique_id=789127916]
-offset_left = -23.999998
-offset_top = 104.0
-offset_right = 104.0
-offset_bottom = 232.0
-scale = Vector2(1.4508466, 1.3613819)
-texture_normal = ExtResource("2_ru3cf")
-
-[node name="destornillador" type="TextureButton" parent="ventilacion juego/herramientas" unique_id=1568714362]
-offset_left = 535.00006
-offset_top = 104.0
-offset_right = 663.00006
-offset_bottom = 232.0
-scale = Vector2(1.4508466, 1.3613819)
-texture_normal = ExtResource("2_ru3cf")
-
-[node name="picoLoro" type="TextureButton" parent="ventilacion juego/herramientas" unique_id=682940958]
-offset_left = 1059.9999
-offset_top = 104.0
-offset_right = 1187.9999
-offset_bottom = 232.0
-scale = Vector2(1.4508466, 1.3613819)
-texture_normal = ExtResource("2_ru3cf")
+[node name="ventilacion juego" parent="." unique_id=746009285 instance=ExtResource("3_vljhc")]
+position = Vector2(-5, 1159)
 
 [node name="BackToKitchen" type="Area2D" parent="." unique_id=588121414]
 position = Vector2(1006, 172)
@@ -147,12 +119,14 @@ shape = SubResource("SegmentShape2D_vljhc")
 
 [node name="laberintojuego" type="Area2D" parent="." unique_id=2130328224]
 position = Vector2(491, 497)
+script = ExtResource("5_e10ms")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="laberintojuego" unique_id=1343933174]
 scale = Vector2(8.142111, 8.142111)
 shape = SubResource("CircleShape2D_44saq")
 
 [node name="laberinto" parent="." unique_id=871257911 instance=ExtResource("6_e10ms")]
+position = Vector2(-2108, 0)
 
 [connection signal="body_entered" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_entered"]
 [connection signal="body_exited" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_exited"]

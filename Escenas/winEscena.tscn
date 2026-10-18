@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://2k44om5arte0"]
+
+[ext_resource type="Script" uid="uid://cwfttxi5wrpgh" path="res://Scripts/win_escena.gd" id="1_aws18"]
+[ext_resource type="VideoStream" uid="uid://c8m6f4g46lixi" path="res://assets/win.ogv" id="1_thuo2"]
+[ext_resource type="Texture2D" uid="uid://cf5ifodgvogop" path="res://assets/botones/boton MAIN MENU.png" id="3_e7shb"]
+[ext_resource type="Texture2D" uid="uid://bfdp27c7jklhm" path="res://assets/botones/boton EXIT.png" id="4_l56q8"]
+
+[node name="Node2D" type="Node2D" unique_id=1798910862]
+script = ExtResource("1_aws18")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=187908548]
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("1_thuo2")
+autoplay = true
+loop = true
+
+[node name="MainMenu" type="TextureButton" parent="." unique_id=1113561332]
+offset_left = 584.99994
+offset_top = 871.99994
+offset_right = 624.99994
+offset_bottom = 911.99994
+scale = Vector2(0.32479998, 0.32479998)
+texture_normal = ExtResource("3_e7shb")
+
+[node name="Quit" type="TextureButton" parent="." unique_id=75011013]
+offset_left = 1014.0
+offset_top = 872.0
+offset_right = 2028.0
+offset_bottom = 1340.0
+scale = Vector2(0.3204821, 0.3204821)
+texture_normal = ExtResource("4_l56q8")
+
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

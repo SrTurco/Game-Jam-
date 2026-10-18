@@ -7,9 +7,6 @@ var playerPosition = GlobalInteractuable.playerPosition
 
 var objeto_actual = null
 
-func _ready():
-	label.hide()
-
 func open_google_search(query: String) -> void:
 	var base_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 	var encoded_query = query.uri_encode()
@@ -27,8 +24,12 @@ func _process(_delta: float) -> void:
 	playerPosition = self.global_position
 	
 	if objeto_actual != null and Input.is_action_just_pressed("interactuar"):
+		if objeto_actual.name == "acceso_cocina" and GlobalInteractuable.etapaSecuestro:
+			
+			pass
 		objeto_actual.accionar()
 		print("accionado")
+	
 
 func _physics_process(_delta):
 	var direccion = Input.get_vector("left", "right", "up", "down")
@@ -100,8 +101,11 @@ func _on_sotano_room_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
 
-func _on_laberintojuego_body_entered(body):
-	pass # Replace with function body.
+func _on_laberintojuego_body_entered(_body: CharacterBody2D):
+	label.text = "Press E to got to the Basement"
+	label.show()
+	interactuable($"../laberinto")
 
-func _on_laberintojuego_body_exited(body):
-	pass # Replace with function body.
+func _on_laberintojuego_body_exited(_body: CharacterBody2D):
+	label.hide()
+	objeto_actual = null

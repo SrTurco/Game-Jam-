@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://cemn0jyil16jj"]
+
+[ext_resource type="Script" uid="uid://bmgdhopmc1na4" path="res://Scripts/cocina_sala_secuestro.gd" id="1_3n3db"]
+[ext_resource type="Texture2D" uid="uid://dwnjg8juvd4w1" path="res://assets/Backround/cocina_skt_v01.jpg" id="1_vbmcs"]
+[ext_resource type="Script" uid="uid://cxo7puwbblrrr" path="res://Scripts/cocina_secuestro.gd" id="2_gsr8u"]
+[ext_resource type="PackedScene" uid="uid://c48ih677og32b" path="res://Escenas/assassin.tscn" id="5_3n3db"]
+[ext_resource type="Texture2D" uid="uid://davc3l3lnyptb" path="res://assets/characters/plomero.01.png" id="5_vbmcs"]
+[ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="6_8vq47"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_44saq"]
+
+[node name="Node2D" type="Node2D" unique_id=1085568832]
+script = ExtResource("1_3n3db")
+
+[node name="pausable" type="Node2D" parent="." unique_id=1439916594]
+script = ExtResource("2_gsr8u")
+
+[node name="CocinaSktV01" type="Sprite2D" parent="pausable" unique_id=1846527680]
+position = Vector2(960, 540)
+texture = ExtResource("1_vbmcs")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pausable" unique_id=82381617]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=92633297]
+position = Vector2(-10.000006, 703.00006)
+rotation = -1.9433198
+scale = Vector2(6.7110186, 120.46991)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=1643972184]
+position = Vector2(1100, 275.00006)
+rotation = -1.2415682
+scale = Vector2(6.7110186, 120.46991)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=1946596599]
+position = Vector2(1813, 537)
+rotation = 0.99018246
+scale = Vector2(6.7110186, 120.46991)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=1405978974]
+position = Vector2(1006, 1058)
+rotation = 2.1247833
+scale = Vector2(4.3269024, 37.442196)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=634494987]
+position = Vector2(684, 871.0001)
+rotation = 0.8790319
+scale = Vector2(4.3269024, 37.442196)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=1137494254]
+position = Vector2(422.00006, 1086)
+rotation = 1.5950038
+scale = Vector2(5.052166, 43.182297)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="pausable/StaticBody2D" unique_id=1965976789]
+position = Vector2(9.9999695, 1073.0001)
+rotation = 3.1413789
+scale = Vector2(5.052166, 43.182297)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="assassin" parent="pausable" unique_id=35008630 instance=ExtResource("5_3n3db")]
+position = Vector2(1475, 523)
+
+[node name="Plomero_01" type="Sprite2D" parent="pausable" unique_id=251794603]
+position = Vector2(1650.9999, 487)
+scale = Vector2(0.21143465, 0.21143465)
+texture = ExtResource("5_vbmcs")
+
+[node name="Label" type="Label" parent="." unique_id=533327935]
+offset_left = 722.0
+offset_top = 518.0
+offset_right = 762.0
+offset_bottom = 560.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_8vq47")
+theme_override_font_sizes/font_size = 30
+
+[node name="Timer" type="Timer" parent="." unique_id=902802276]
+wait_time = 10.0
