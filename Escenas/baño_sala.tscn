@@ -26,7 +26,7 @@ position = Vector2(1433, 898)
 
 [node name="rotacion de tubos" parent="." unique_id=1816809060 instance=ExtResource("2_55whg")]
 process_mode = 0
-position = Vector2(-1368, -713)
+position = Vector2(-2073, -1)
 
 [node name="juego tubos" type="Area2D" parent="." unique_id=245032530]
 position = Vector2(554, 635)

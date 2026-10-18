@@ -20,8 +20,8 @@ func _process(_delta):
 	
 	if agarrado:
 		epoxi.global_position = mouse_pos
-		
 	
+
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
 		var mouse_pos: Vector2 = get_viewport().get_mouse_position()

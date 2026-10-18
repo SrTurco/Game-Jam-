@@ -1,15 +1,3 @@
-res://Escenas/baño_sala.tscn
-res://Scripts/GlobalInteractuable.gd
-res://Scripts/playerScript.gd
-res://Escenas/sala_principal.tscn
-res://Escenas/menu_principal.tscn
-res://Scripts/rotacion_de_tubos.gd
-res://Escenas/rotacion_de_tubos.tscn
 res://Escenas/sotano_sala.tscn
-res://Escenas/cocina_sala.tscn
-res://Scripts/juego_parchear.gd
-res://Scripts/acceso_cocina.gd
-res://Scripts/parchear_juego.gd
+res://Scripts/playerScript.gd
 res://Escenas/parchearJuego.tscn
-res://Escenas/player.tscn
-res://Scripts/sotano_room.gd

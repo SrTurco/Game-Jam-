@@ -59,7 +59,7 @@ func tubosConectados():
 	
 	if miniCompletado:
 		GlobalInteractuable.bañoMinijuego = true
-		self.global_position = Vector2(-1370, -1000)
+		self.global_position = Vector2(-2000, -2000)
 		$"../Label2".show()
 		$"../Label2".text = "Pipe fixed, lets go for another task."
 		tiempo_restante = 5.0
@@ -90,7 +90,7 @@ func accionar():
 			self.global_position = Vector2(-1370, -1000)
 			accionado = false
 		else:
-			self.global_position = Vector2(370, 310)
+			self.global_position = Vector2(-5, -1)
 			accionado = true
 	else:
 		$"../Label".text = "Pipe already fixed, its better dont touch it."

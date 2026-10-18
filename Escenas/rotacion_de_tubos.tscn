@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://d1truv84rw1rc"]
 
 [ext_resource type="Script" uid="uid://b42iw407sqhes" path="res://Scripts/rotacion_de_tubos.gd" id="1_2gsu7"]
+[ext_resource type="Texture2D" uid="uid://di6f1vir0afbo" path="res://assets/Backround/FONDO_MINIJUEGOS_V01.png" id="2_q8t2k"]
 [ext_resource type="Texture2D" uid="uid://2m3vwsqse0i" path="res://assets/tubos/TUBO_PALO_V01.png" id="2_vxqby"]
+[ext_resource type="Texture2D" uid="uid://bnuuywxir0sy4" path="res://assets/Backround/FG_MINIJUEGOS_V01.png" id="3_6lljo"]
 [ext_resource type="Texture2D" uid="uid://cxskqtmtf5url" path="res://assets/tubos/TUBO_T_V02.png" id="3_71lch"]
 [ext_resource type="Texture2D" uid="uid://2rld4pll0cfr" path="res://assets/canillas/CANILLA.png" id="3_igtd1"]
 [ext_resource type="Texture2D" uid="uid://b86a8sarxoutb" path="res://assets/tubos/TUBO_CODO_V02.png" id="4_q8t2k"]
@@ -11,185 +13,193 @@
 process_mode = 3
 script = ExtResource("1_2gsu7")
 
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1911614401]
+position = Vector2(961, 542)
+scale = Vector2(0.8536704, 0.8548969)
+texture = ExtResource("2_q8t2k")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D2" unique_id=1680207527]
+texture = ExtResource("3_6lljo")
+
 [node name="tubo 1" type="Sprite2D" parent="." unique_id=1131243807 groups=["sprites_rotables"]]
-position = Vector2(32, -17)
+position = Vector2(376.7332, 352.01065)
 rotation = 4.712389
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="tubo 2" type="Sprite2D" parent="." unique_id=1519434416 groups=["sprites_rotables"]]
-position = Vector2(191, -17)
+position = Vector2(535.73315, 352.01065)
 rotation = 1.5707964
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="tubo 3" type="Sprite2D" parent="." unique_id=605214196 groups=["sprites_rotables"]]
-position = Vector2(351, -17)
+position = Vector2(695.73315, 352.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="tubo 4" type="Sprite2D" parent="." unique_id=1057616750 groups=["sprites_rotables"]]
-position = Vector2(510, -17)
+position = Vector2(854.73315, 352.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="tubo 5" type="Sprite2D" parent="." unique_id=1069412193 groups=["sprites_rotables"]]
-position = Vector2(677, -17)
+position = Vector2(1021.73315, 352.01065)
 rotation = 3.1415927
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="tubo 6" type="Sprite2D" parent="." unique_id=78459894 groups=["sprites_rotables"]]
-position = Vector2(836, -17)
+position = Vector2(1180.7332, 352.01065)
 rotation = 1.5707964
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="tubo 7" type="Sprite2D" parent="." unique_id=1640854683 groups=["sprites_rotables"]]
-position = Vector2(836, 142)
+position = Vector2(1180.7332, 511.01065)
 rotation = 3.1415927
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="tubo 8" type="Sprite2D" parent="." unique_id=803130777 groups=["sprites_rotables"]]
-position = Vector2(677, 142)
+position = Vector2(1021.73315, 511.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="tubo 9" type="Sprite2D" parent="." unique_id=128205132 groups=["sprites_rotables"]]
-position = Vector2(510, 142)
+position = Vector2(854.7332, 511.01068)
 rotation = 0.7853982
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_6lljo")
 
 [node name="tubo 10" type="Sprite2D" parent="." unique_id=1408181695 groups=["sprites_rotables"]]
-position = Vector2(351, 142)
+position = Vector2(695.73315, 511.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="tubo 11" type="Sprite2D" parent="." unique_id=763878185 groups=["sprites_rotables"]]
-position = Vector2(351, 309)
+position = Vector2(695.73315, 678.0106)
 rotation = 3.1415927
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="tubo 12" type="Sprite2D" parent="." unique_id=1757993803 groups=["sprites_rotables"]]
-position = Vector2(351, 470)
+position = Vector2(695.73315, 839.0106)
 rotation = 4.712389
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="tubo 13" type="Sprite2D" parent="." unique_id=609723604 groups=["sprites_rotables"]]
-position = Vector2(510, 470)
+position = Vector2(854.73315, 839.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="tubo 14" type="Sprite2D" parent="." unique_id=1694459891 groups=["sprites_rotables"]]
-position = Vector2(677, 470)
+position = Vector2(1021.73315, 839.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="tubo 15" type="Sprite2D" parent="." unique_id=1973314105 groups=["sprites_rotables"]]
-position = Vector2(836, 470)
+position = Vector2(1180.7332, 839.0106)
 rotation = 4.712389
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="tubo 16" type="Sprite2D" parent="." unique_id=1185156006 groups=["sprites_rotables"]]
-position = Vector2(996, 470)
+position = Vector2(1340.7332, 839.0107)
 rotation = 0.7853982
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_6lljo")
 
 [node name="tubo 17" type="Sprite2D" parent="." unique_id=1873310310 groups=["sprites_rotables"]]
-position = Vector2(1155, 470)
+position = Vector2(1499.7332, 839.0106)
 rotation = 1.5707964
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1442486601 groups=["sprites_rotables"]]
-position = Vector2(996, -17)
+position = Vector2(1340.7332, 352.01068)
 rotation = 0.7853982
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_6lljo")
 
 [node name="Sprite2D8" type="Sprite2D" parent="." unique_id=1318190873 groups=["sprites_rotables"]]
-position = Vector2(1155, -17)
+position = Vector2(1499.7332, 352.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D9" type="Sprite2D" parent="." unique_id=1213664349 groups=["sprites_rotables"]]
-position = Vector2(32, 142)
+position = Vector2(376.7332, 511.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="maybe 1" type="Sprite2D" parent="." unique_id=467316430 groups=["sprites_rotables"]]
-position = Vector2(191, 142)
+position = Vector2(535.73315, 511.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D15" type="Sprite2D" parent="." unique_id=1797157844 groups=["sprites_rotables"]]
-position = Vector2(996, 142)
+position = Vector2(1340.7332, 511.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D16" type="Sprite2D" parent="." unique_id=937303022 groups=["sprites_rotables"]]
-position = Vector2(1155, 142)
+position = Vector2(1499.7332, 511.01065)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D17" type="Sprite2D" parent="." unique_id=729039620 groups=["sprites_rotables"]]
-position = Vector2(32, 309)
+position = Vector2(376.7332, 678.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="Sprite2D18" type="Sprite2D" parent="." unique_id=100091620 groups=["sprites_rotables"]]
-position = Vector2(191, 309)
+position = Vector2(535.73315, 678.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="Sprite2D20" type="Sprite2D" parent="." unique_id=271144325 groups=["sprites_rotables"]]
-position = Vector2(510, 309)
+position = Vector2(854.73315, 678.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="Sprite2D21" type="Sprite2D" parent="." unique_id=46253159 groups=["sprites_rotables"]]
-position = Vector2(677, 309)
+position = Vector2(1021.73315, 678.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D22" type="Sprite2D" parent="." unique_id=160962684 groups=["sprites_rotables"]]
-position = Vector2(836, 309)
+position = Vector2(1180.7332, 678.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_71lch")
 
 [node name="Sprite2D23" type="Sprite2D" parent="." unique_id=884179746 groups=["sprites_rotables"]]
-position = Vector2(996, 309)
+position = Vector2(1340.7332, 678.0107)
 rotation = 0.7853982
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_6lljo")
 
 [node name="Sprite2D24" type="Sprite2D" parent="." unique_id=1186163359 groups=["sprites_rotables"]]
-position = Vector2(1155, 309)
+position = Vector2(1499.7332, 678.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D25" type="Sprite2D" parent="." unique_id=1282984791 groups=["sprites_rotables"]]
-position = Vector2(32, 470)
+position = Vector2(376.7332, 839.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_q8t2k")
 
 [node name="Sprite2D26" type="Sprite2D" parent="." unique_id=162612867 groups=["sprites_rotables"]]
-position = Vector2(191, 470)
+position = Vector2(535.73315, 839.0106)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vxqby")
 
 [node name="canilla" type="Sprite2D" parent="." unique_id=2006963527]
-position = Vector2(-145, -53.000015)
+position = Vector2(199.73322, 316.01068)
 scale = Vector2(0.638725, 0.638725)
 texture = ExtResource("3_igtd1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1061077864]
-position = Vector2(1338, 432)
+position = Vector2(1682.7332, 801.0107)
 scale = Vector2(0.68890244, 0.68890244)
 texture = ExtResource("3_igtd1")

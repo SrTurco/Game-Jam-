@@ -7,6 +7,8 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_in5sg"]
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vljhc"]
+
 [node name="Node2D" type="Node2D" unique_id=1085568832]
 
 [node name="SotanoSktV01" type="Sprite2D" parent="." unique_id=856020688]
@@ -48,10 +50,10 @@ offset_bottom = 232.0
 scale = Vector2(1.4508466, 1.3613819)
 texture_normal = ExtResource("2_ru3cf")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=588121414]
-position = Vector2(421, 470)
+[node name="BackToKitchen" type="Area2D" parent="." unique_id=588121414]
+position = Vector2(1006, 172)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1688684484]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackToKitchen" unique_id=1688684484]
 scale = Vector2(11.608574, 12.143446)
 shape = SubResource("CircleShape2D_in5sg")
 
@@ -61,3 +63,80 @@ offset_top = 932.0
 offset_right = 820.0
 offset_bottom = 955.0
 theme_override_font_sizes/font_size = 30
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=936095371]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1488873251]
+position = Vector2(868, 120.00001)
+rotation = -0.75513864
+scale = Vector2(4.8322186, 46.411343)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1641735286]
+position = Vector2(1012, 64.999985)
+rotation = -0.75513864
+scale = Vector2(4.8322186, 46.411343)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=327856183]
+position = Vector2(1343, 412.00006)
+rotation = -0.9708779
+scale = Vector2(6.563445, 71.184784)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=698362742]
+position = Vector2(1910, 804)
+rotation = 1.029392
+scale = Vector2(6.563445, 71.184784)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=550455044]
+position = Vector2(1610, 979)
+rotation = 1.5451412
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=943124434]
+position = Vector2(1148, 1548)
+rotation = 2.3553216
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=1031114895]
+position = Vector2(445, 837.00006)
+rotation = 1.1886737
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D" unique_id=799117154]
+position = Vector2(170, 970.9999)
+rotation = 2.5175085
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D" unique_id=1103935124]
+position = Vector2(-4.999878, 726.0001)
+rotation = 3.1629758
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D" unique_id=2102592577]
+position = Vector2(971, 250.00002)
+rotation = 1.2750554
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D" unique_id=333546797]
+position = Vector2(1177, 453.00006)
+rotation = 1.9952973
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D" unique_id=1815230751]
+position = Vector2(1286.0001, -64.99997)
+rotation = 1.1637346
+scale = Vector2(7.414481, 101.64122)
+shape = SubResource("SegmentShape2D_vljhc")
+
+[connection signal="body_entered" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_entered"]
+[connection signal="body_exited" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_exited"]

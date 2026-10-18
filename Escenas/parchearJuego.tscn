@@ -1,7 +1,12 @@
 [gd_scene format=3 uid="uid://rrfrb24ugeib"]
 
-[ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="1_5tkhd"]
 [ext_resource type="Script" uid="uid://co6tl7d3medhv" path="res://Scripts/parchear_juego.gd" id="1_7tslx"]
+[ext_resource type="Texture2D" uid="uid://di6f1vir0afbo" path="res://assets/Backround/FONDO_MINIJUEGOS_V01.png" id="2_7ba1y"]
+[ext_resource type="Texture2D" uid="uid://bnuuywxir0sy4" path="res://assets/Backround/FG_MINIJUEGOS_V01.png" id="3_f223y"]
+[ext_resource type="Texture2D" uid="uid://b012smoyap177" path="res://assets/minijuego2/TUBERIA_ROTA.png" id="3_jyulv"]
+[ext_resource type="Texture2D" uid="uid://ydtixuhrmbb6" path="res://assets/minijuego2/POXILINA_V01.png" id="5_14y32"]
+[ext_resource type="Texture2D" uid="uid://cq0cb6bdd8d25" path="res://assets/minijuego2/MASA_OPCION2_V01.png" id="6_3xft2"]
+[ext_resource type="Texture2D" uid="uid://bv88cr8faue11" path="res://assets/minijuego2/MASA_OPCION1_V01.png" id="7_mqfwk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
 
@@ -16,21 +21,29 @@
 [node name="parchear" type="Node2D" unique_id=466163402]
 script = ExtResource("1_7tslx")
 
-[node name="pipe" type="Sprite2D" parent="." unique_id=1045043370]
-position = Vector2(967.99994, 539)
-scale = Vector2(12.074364, 4.3386173)
-texture = ExtResource("1_5tkhd")
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1358872377]
+position = Vector2(961, 542)
+scale = Vector2(0.8536704, 0.8548969)
+texture = ExtResource("2_7ba1y")
+
+[node name="pipe" type="Sprite2D" parent="Sprite2D2" unique_id=1045043370]
+position = Vector2(-65.59912, -3.5091553)
+scale = Vector2(0.96865153, 0.9672618)
+texture = ExtResource("3_jyulv")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D2" unique_id=583462820]
+texture = ExtResource("3_f223y")
 
 [node name="Epoxi" type="TextureButton" parent="." unique_id=1085497605]
-offset_left = 1600.0
-offset_top = 810.0
-offset_right = 1728.0
-offset_bottom = 938.0
-scale = Vector2(1.6016243, 1.6016243)
-texture_normal = ExtResource("1_5tkhd")
+offset_left = 1474.0
+offset_top = 710.0
+offset_right = 1995.0
+offset_bottom = 1324.0
+scale = Vector2(0.5649473, 0.5649473)
+texture_normal = ExtResource("5_14y32")
 
 [node name="hole 1" type="Area2D" parent="." unique_id=544739995]
-position = Vector2(623, 288)
+position = Vector2(614, 618)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hole 1" unique_id=2033234197]
 scale = Vector2(7.392761, 4.095232)
@@ -38,10 +51,11 @@ shape = SubResource("RectangleShape2D_44saq")
 
 [node name="holefixed1" type="Sprite2D" parent="hole 1" unique_id=546476434 groups=["holes_fixed"]]
 visible = false
-texture = ExtResource("1_5tkhd")
+scale = Vector2(0.6887406, 0.6887406)
+texture = ExtResource("6_3xft2")
 
 [node name="hole 2" type="Area2D" parent="." unique_id=2061858580]
-position = Vector2(381, 654)
+position = Vector2(456, 774)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hole 2" unique_id=1554113247]
 scale = Vector2(6.460183, -3.7400467)
@@ -49,10 +63,12 @@ shape = SubResource("RectangleShape2D_bghhj")
 
 [node name="holefixed2" type="Sprite2D" parent="hole 2" unique_id=955084363 groups=["holes_fixed"]]
 visible = false
-texture = ExtResource("1_5tkhd")
+rotation = -1.1259235
+scale = Vector2(0.5838687, 0.5838687)
+texture = ExtResource("7_mqfwk")
 
 [node name="hole 3" type="Area2D" parent="." unique_id=965315855]
-position = Vector2(851, 482)
+position = Vector2(1247, 305)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hole 3" unique_id=59027404]
 scale = Vector2(6.4366236, 3.6414697)
@@ -60,10 +76,13 @@ shape = SubResource("RectangleShape2D_jsphu")
 
 [node name="holefixed3" type="Sprite2D" parent="hole 3" unique_id=14985997 groups=["holes_fixed"]]
 visible = false
-texture = ExtResource("1_5tkhd")
+position = Vector2(7.999999, -7.999999)
+rotation = -4.013994
+scale = Vector2(0.70986146, 0.70986146)
+texture = ExtResource("7_mqfwk")
 
 [node name="hole 4" type="Area2D" parent="." unique_id=841426959]
-position = Vector2(1043, 721)
+position = Vector2(1085, 712)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hole 4" unique_id=1019820484]
 scale = Vector2(7.1013184, 3.40283)
@@ -71,10 +90,12 @@ shape = SubResource("RectangleShape2D_ony7f")
 
 [node name="holefixed4" type="Sprite2D" parent="hole 4" unique_id=1133976247 groups=["holes_fixed"]]
 visible = false
-texture = ExtResource("1_5tkhd")
+rotation = 1.6069083
+scale = Vector2(0.61340046, 0.61340046)
+texture = ExtResource("6_3xft2")
 
 [node name="hole 5" type="Area2D" parent="." unique_id=390359351]
-position = Vector2(1502, 529)
+position = Vector2(1580, 260)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hole 5" unique_id=1652767457]
 scale = Vector2(8.767035, 4.005067)
@@ -82,7 +103,9 @@ shape = SubResource("RectangleShape2D_54ioy")
 
 [node name="holefixed5" type="Sprite2D" parent="hole 5" unique_id=901396586 groups=["holes_fixed"]]
 visible = false
-texture = ExtResource("1_5tkhd")
+rotation = -2.6833274
+scale = Vector2(0.77173877, 0.77173877)
+texture = ExtResource("6_3xft2")
 
 [connection signal="pressed" from="Epoxi" to="." method="_on_texture_button_pressed"]
 [connection signal="mouse_entered" from="hole 1" to="." method="_on_hole_1_mouse_entered"]
