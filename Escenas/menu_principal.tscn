@@ -1,22 +1,25 @@
 [gd_scene format=3 uid="uid://ct51tdchvi8ep"]
 
 [ext_resource type="Script" uid="uid://cxi5k0ag72ar8" path="res://Scripts/menu_principal.gd" id="1_ft1ng"]
+[ext_resource type="Texture2D" uid="uid://6ywqg17r0kay" path="res://assets/botones/boton play.png" id="2_bmgc8"]
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_qncgo"]
+[ext_resource type="Texture2D" uid="uid://bfdp27c7jklhm" path="res://assets/botones/boton EXIT.png" id="4_d8lex"]
 
 [node name="MenuPrincipal" type="Node2D" unique_id=860538185]
 script = ExtResource("1_ft1ng")
 
 [node name="Play" type="TextureButton" parent="." unique_id=1525395124]
-offset_left = 84.0
-offset_top = 549.0
-offset_right = 212.0
-offset_bottom = 677.0
-texture_normal = ExtResource("2_qncgo")
+offset_left = 76.0
+offset_top = 776.0
+offset_right = 1090.0
+offset_bottom = 1244.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("2_bmgc8")
 
 [node name="Tutorial" type="TextureButton" parent="." unique_id=951934082]
-offset_left = 77.0
+offset_left = -180.0
 offset_top = 721.0
-offset_right = 205.0
+offset_right = -52.0
 offset_bottom = 849.0
 texture_normal = ExtResource("2_qncgo")
 
@@ -25,7 +28,8 @@ offset_left = 76.0
 offset_top = 891.0
 offset_right = 204.0
 offset_bottom = 1019.0
-texture_normal = ExtResource("2_qncgo")
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("4_d8lex")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]

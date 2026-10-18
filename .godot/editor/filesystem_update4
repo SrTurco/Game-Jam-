@@ -1,3 +1,2 @@
-res://Escenas/sotano_sala.tscn
-res://Scripts/playerScript.gd
+res://Escenas/menu_principal.tscn
 res://Escenas/parchearJuego.tscn
