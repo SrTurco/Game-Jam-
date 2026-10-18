@@ -2,13 +2,79 @@
 
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_p1yeu"]
 [ext_resource type="Texture2D" uid="uid://dwnjg8juvd4w1" path="res://assets/Backround/cocina_skt_v01.jpg" id="2_7gxgc"]
+[ext_resource type="Script" uid="uid://o1man1q4guqy" path="res://Scripts/juego_parchear.gd" id="3_rd7kc"]
+[ext_resource type="PackedScene" uid="uid://rrfrb24ugeib" path="res://Escenas/parchearJuego.tscn" id="3_rpgpt"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_44saq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 
 [node name="Node2D" type="Node2D" unique_id=1085568832]
-
-[node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_p1yeu")]
-position = Vector2(209, 215)
 
 [node name="CocinaSktV01" type="Sprite2D" parent="." unique_id=1846527680]
 position = Vector2(960, 540)
 texture = ExtResource("2_7gxgc")
 metadata/_edit_lock_ = true
+
+[node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_p1yeu")]
+position = Vector2(225, 889)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=82381617]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=92633297]
+position = Vector2(-10.000006, 703.00006)
+rotation = -1.9433198
+scale = Vector2(6.7110186, 120.46991)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1643972184]
+position = Vector2(1100, 275.00006)
+rotation = -1.2415682
+scale = Vector2(6.7110186, 120.46991)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1946596599]
+position = Vector2(1813, 537)
+rotation = 0.99018246
+scale = Vector2(6.7110186, 120.46991)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1405978974]
+position = Vector2(1006, 1058)
+rotation = 2.1247833
+scale = Vector2(4.3269024, 37.442196)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=634494987]
+position = Vector2(684, 871.0001)
+rotation = 0.8790319
+scale = Vector2(4.3269024, 37.442196)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=1137494254]
+position = Vector2(422.00006, 1086)
+rotation = 1.5950038
+scale = Vector2(5.052166, 43.182297)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=1965976789]
+position = Vector2(9.9999695, 1073.0001)
+rotation = 3.1413789
+scale = Vector2(5.052166, 43.182297)
+shape = SubResource("SegmentShape2D_44saq")
+
+[node name="parchear" parent="." unique_id=466163402 instance=ExtResource("3_rpgpt")]
+
+[node name="juego parchear" type="Area2D" parent="." unique_id=349399154]
+position = Vector2(563, 495)
+script = ExtResource("3_rd7kc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="juego parchear" unique_id=1601952505]
+position = Vector2(37, 15)
+rotation = -0.031864837
+scale = Vector2(10.963876, 10.840126)
+shape = SubResource("CircleShape2D_44saq")
+
+[connection signal="body_entered" from="juego parchear" to="CharacterBody2D" method="_on_juego_parchear_body_entered"]
+[connection signal="body_exited" from="juego parchear" to="CharacterBody2D" method="_on_juego_parchear_body_exited"]

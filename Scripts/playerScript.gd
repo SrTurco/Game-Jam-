@@ -35,7 +35,7 @@ func interactuable(objeto):
 
 # Al entrar a la colission de tal objeto (aun no se sabe el objeto)
 func player_collision_with_object(body: CharacterBody2D):
-	label.text = "Presionar E para ir al baño"
+	label.text = "Press E to go to the bathroom"
 	label.show()
 	interactuable($"../acceso_baño")
 
@@ -44,7 +44,7 @@ func player_quit_collision_area(body: CharacterBody2D):
 	objeto_actual = null
 
 func _on_juego_tubos_body_entered(body: CharacterBody2D):
-	label.text = "Presionar E para interactuar"
+	label.text = "Press E to interact"
 	label.show()
 	interactuable($"../rotacion de tubos")
 
@@ -53,11 +53,19 @@ func _on_juego_tubos_body_exited(body: CharacterBody2D):
 	objeto_actual = null
 
 func _on_back_to_living_room_body_entered(body):
-	label.text = "Presionar E para interactuar"
+	label.text = "Press E to interact"
 	label.show()
 	interactuable($"../backToLivingRoom")
 
-
 func _on_back_to_living_room_body_exited(body):
+	label.hide()
+	objeto_actual = null
+
+func _on_juego_parchear_body_entered(body):
+	label.text = "Press E to interact"
+	label.show()
+	interactuable($"../backToLivingRoom")
+
+func _on_juego_parchear_body_exited(body):
 	label.hide()
 	objeto_actual = null

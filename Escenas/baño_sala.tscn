@@ -43,6 +43,14 @@ offset_right = 994.0
 offset_bottom = 958.0
 theme_override_font_sizes/font_size = 30
 
+[node name="Label2" type="Label" parent="." unique_id=1380674574]
+visible = false
+offset_left = 1908.0
+offset_top = 1870.0
+offset_right = 1948.0
+offset_bottom = 1912.0
+theme_override_font_sizes/font_size = 30
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1545494983]
 visible = false
 position = Vector2(1543, 929)
