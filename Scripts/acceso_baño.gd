@@ -1,0 +1,4 @@
+extends Area2D
+
+func accionar():
+	get_tree().change_scene_to_file("res://Escenas/baño_sala.tscn")

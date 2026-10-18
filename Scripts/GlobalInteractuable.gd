@@ -1,0 +1,6 @@
+extends Node
+
+var playerPosition = Vector2(0,0)
+
+var bañoMinijuego = false
+var cocinaMinijuego = false

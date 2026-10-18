@@ -2,9 +2,11 @@ Node2D
 Node
 Label
 CollisionShape2D
-Area2D
+StaticBody2D
 Sprite2D
-Container
-Control
+Area2D
+Label
+Node
 TextureButton
+Node2D
 CharacterBody2D

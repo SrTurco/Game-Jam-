@@ -1,6 +1,14 @@
-res://Escenas/baño_sala.tscn
-res://Scripts/tutorial.gd
-res://Scripts/rotacion_de_tubos.gd
+res://Escenas/menu_inicio.tscn
 res://Scripts/playerScript.gd
+res://Escenas/cocina_sala.tscn
 res://Escenas/sala_principal.tscn
+res://Escenas/baño_sala.tscn
+res://Escenas/sotano_sala.tscn
+res://Scripts/menu_principal.gd
+res://Escenas/menu_principal.tscn
+res://Scripts/menu_inicio.gd
 res://Scripts/global_pause.gd
+res://Scripts/pause_menu.gd
+res://Escenas/pause_menu.tscn
+res://Scripts/tutorial.gd
+res://Escenas/tutorial.tscn
