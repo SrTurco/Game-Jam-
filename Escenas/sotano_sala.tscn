@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://djqave45035ls"]
 
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_fw0b8"]
+[ext_resource type="Script" uid="uid://tm5bn1rofnjy" path="res://Scripts/sotano_sala.gd" id="1_qi6ja"]
 [ext_resource type="Texture2D" uid="uid://daifhi0gwjd4p" path="res://assets/Backround/SOTANOBG_FINAL.png" id="1_vljhc"]
 [ext_resource type="PackedScene" uid="uid://v8u575s5x4le" path="res://Escenas/ventilacion_juego.tscn" id="3_vljhc"]
 [ext_resource type="Script" uid="uid://cnrey642ho20r" path="res://Scripts/laberintojuego.gd" id="5_e10ms"]
 [ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="5_vljhc"]
 [ext_resource type="PackedScene" uid="uid://dcks21ee56j77" path="res://Escenas/laberinto.tscn" id="6_e10ms"]
+[ext_resource type="Script" uid="uid://clh6os6wte21e" path="res://Scripts/accesoVentilacion.gd" id="8_6q2ba"]
+[ext_resource type="Script" uid="uid://du1wr5o7s1ghp" path="res://Scripts/etapa_secuestro.gd" id="9_icenn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_in5sg"]
 
@@ -13,7 +16,12 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_bghhj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jsphu"]
+
 [node name="Node2D" type="Node2D" unique_id=1085568832]
+script = ExtResource("1_qi6ja")
 
 [node name="SotanoSktV01" type="Sprite2D" parent="." unique_id=856020688]
 position = Vector2(960, 540)
@@ -24,10 +32,10 @@ metadata/_edit_lock_ = true
 position = Vector2(1320, 447)
 
 [node name="ventilacion juego" parent="." unique_id=746009285 instance=ExtResource("3_vljhc")]
-position = Vector2(-5, 1159)
+position = Vector2(0, 1141)
 
 [node name="BackToKitchen" type="Area2D" parent="." unique_id=588121414]
-position = Vector2(1006, 172)
+position = Vector2(1006, -179)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackToKitchen" unique_id=1688684484]
 scale = Vector2(11.608574, 12.143446)
@@ -43,7 +51,6 @@ theme_override_fonts/font = ExtResource("5_vljhc")
 theme_override_font_sizes/font_size = 30
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=936095371]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1488873251]
 position = Vector2(868, 120.00001)
@@ -52,14 +59,14 @@ scale = Vector2(4.8322186, 46.411343)
 shape = SubResource("SegmentShape2D_vljhc")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1641735286]
-position = Vector2(1012, 64.999985)
+position = Vector2(1049, 46.000004)
 rotation = -0.75513864
 scale = Vector2(4.8322186, 46.411343)
 shape = SubResource("SegmentShape2D_vljhc")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=327856183]
-position = Vector2(1343, 412.00006)
-rotation = -0.9708779
+position = Vector2(1374.9999, 383.99997)
+rotation = -1.2674382
 scale = Vector2(6.563445, 71.184784)
 shape = SubResource("SegmentShape2D_vljhc")
 
@@ -117,6 +124,12 @@ rotation = 1.1637346
 scale = Vector2(7.414481, 101.64122)
 shape = SubResource("SegmentShape2D_vljhc")
 
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="StaticBody2D" unique_id=1827850254]
+position = Vector2(1757.9999, 503)
+rotation = 0.074680686
+scale = Vector2(6.563445, 71.184784)
+shape = SubResource("SegmentShape2D_vljhc")
+
 [node name="laberintojuego" type="Area2D" parent="." unique_id=2130328224]
 position = Vector2(491, 497)
 script = ExtResource("5_e10ms")
@@ -128,7 +141,37 @@ shape = SubResource("CircleShape2D_44saq")
 [node name="laberinto" parent="." unique_id=871257911 instance=ExtResource("6_e10ms")]
 position = Vector2(-2108, 0)
 
+[node name="Area2D" type="Area2D" parent="." unique_id=200671143]
+position = Vector2(2183, 469)
+script = ExtResource("8_6q2ba")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1091970016]
+scale = Vector2(-13.782434, -13.782434)
+shape = SubResource("CircleShape2D_bghhj")
+
+[node name="TimerEscape" type="Timer" parent="." unique_id=1373576076]
+wait_time = 60.0
+
+[node name="TimerAyuda" type="Timer" parent="." unique_id=1170223747]
+wait_time = 30.0
+
+[node name="etapaSecuestro" type="Area2D" parent="." unique_id=653180209]
+position = Vector2(1004, 167.99998)
+scale = Vector2(1.1567888, 1.1567888)
+script = ExtResource("9_icenn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="etapaSecuestro" unique_id=1050814825]
+rotation = 0.05605738
+scale = Vector2(10.834901, 10.834901)
+shape = SubResource("CircleShape2D_jsphu")
+
 [connection signal="body_entered" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_entered"]
 [connection signal="body_exited" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_exited"]
 [connection signal="body_entered" from="laberintojuego" to="CharacterBody2D" method="_on_laberintojuego_body_entered"]
 [connection signal="body_exited" from="laberintojuego" to="CharacterBody2D" method="_on_laberintojuego_body_exited"]
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="TimerEscape" to="." method="_on_timer_escape_timeout"]
+[connection signal="timeout" from="TimerAyuda" to="." method="_on_timer_ayuda_timeout"]
+[connection signal="body_entered" from="etapaSecuestro" to="CharacterBody2D" method="_on_etapa_secuestro_body_entered"]
+[connection signal="body_exited" from="etapaSecuestro" to="CharacterBody2D" method="_on_etapa_secuestro_body_exited"]

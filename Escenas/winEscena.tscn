@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://2k44om5arte0"]
 
 [ext_resource type="Script" uid="uid://cwfttxi5wrpgh" path="res://Scripts/win_escena.gd" id="1_aws18"]
-[ext_resource type="VideoStream" uid="uid://c8m6f4g46lixi" path="res://assets/win.ogv" id="1_thuo2"]
+[ext_resource type="VideoStream" uid="uid://cboyb5dnqvead" path="res://assets/win.ogv" id="1_thuo2"]
 [ext_resource type="Texture2D" uid="uid://cf5ifodgvogop" path="res://assets/botones/boton MAIN MENU.png" id="3_e7shb"]
 [ext_resource type="Texture2D" uid="uid://bfdp27c7jklhm" path="res://assets/botones/boton EXIT.png" id="4_l56q8"]
 

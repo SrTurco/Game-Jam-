@@ -40,7 +40,6 @@ func _input(event):
 			agarrado = false
 	
 	if miniCompletado:
-		GlobalInteractuable.bañoMinijuego = true
 		GlobalInteractuable.cocinaMinijuego = true
 		self.global_position = Vector2(-1370, -1000)
 

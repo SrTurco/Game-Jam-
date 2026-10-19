@@ -102,10 +102,35 @@ func _on_sotano_room_body_exited(_body: CharacterBody2D):
 	objeto_actual = null
 
 func _on_laberintojuego_body_entered(_body: CharacterBody2D):
-	label.text = "Press E to got to the Basement"
+	label.text = "Press E to interact"
 	label.show()
-	interactuable($"../laberinto")
+	interactuable($"../laberintojuego")
 
 func _on_laberintojuego_body_exited(_body: CharacterBody2D):
 	label.hide()
 	objeto_actual = null
+
+func _on_area_2d_body_entered(_body: CharacterBody2D):
+	label.text = "Press E to interact"
+	label.show()
+	interactuable($"../Area2D")
+	
+func _on_area_2d_body_exited(_body: CharacterBody2D):
+	label.hide()
+	objeto_actual = null
+
+func _on_etapa_secuestro_body_entered(_body: CharacterBody2D):
+	label.text = "Press E to got to the Kitchen"
+	label.show()
+	interactuable($"../etapaSecuestro")
+
+func _on_etapa_secuestro_body_exited(_body: CharacterBody2D):
+	label.hide()
+	objeto_actual = null
+
+func _on_cant_go_basement_body_entered(_body: CharacterBody2D):
+	label.text = "I cant go to the Basement right now"
+	label.show()
+
+func _on_cant_go_basement_body_exited(_body: CharacterBody2D):
+	label.hide()

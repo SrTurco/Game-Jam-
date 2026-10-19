@@ -1,6 +1,8 @@
-res://Scripts/laberinto.gd
-res://Escenas/laberinto.tscn
-res://Scripts/laberintojuego.gd
+res://Escenas/lose.tscn
+res://Scripts/loseScene.gd
 res://Escenas/sotano_sala.tscn
-res://Scripts/cocina_sala_secuestro.gd
-res://Scripts/menu_principal.gd
+res://Scripts/sotano_sala.gd
+res://Escenas/cocina_sala.tscn
+res://Scripts/cocina_sala.gd
+res://Scripts/playerScript.gd
+res://Scripts/parchear_juego.gd

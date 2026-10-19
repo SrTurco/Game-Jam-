@@ -18,9 +18,9 @@ loop = true
 
 [node name="Play" type="TextureButton" parent="." unique_id=1525395124]
 offset_left = 786.0
-offset_top = 679.0
+offset_top = 666.0
 offset_right = 1800.0
-offset_bottom = 1147.0
+offset_bottom = 1134.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("2_bmgc8")
 
@@ -33,9 +33,9 @@ texture_normal = ExtResource("2_qncgo")
 
 [node name="Quit" type="TextureButton" parent="." unique_id=1878159200]
 offset_left = 786.0
-offset_top = 794.0
+offset_top = 850.0
 offset_right = 1800.0
-offset_bottom = 1262.0
+offset_bottom = 1318.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("4_d8lex")
 

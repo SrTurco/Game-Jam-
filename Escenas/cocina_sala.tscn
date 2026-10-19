@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cyptnju1fwv4m"]
 
+[ext_resource type="Script" uid="uid://cndfoqb3aqktv" path="res://Scripts/cocina_sala.gd" id="1_0bu10"]
 [ext_resource type="PackedScene" uid="uid://drdounhhos7qq" path="res://Escenas/player.tscn" id="1_p1yeu"]
 [ext_resource type="Texture2D" uid="uid://dwnjg8juvd4w1" path="res://assets/Backround/cocina_skt_v01.jpg" id="2_7gxgc"]
 [ext_resource type="Script" uid="uid://o1man1q4guqy" path="res://Scripts/juego_parchear.gd" id="3_rd7kc"]
@@ -16,7 +17,10 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bghhj"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_jsphu"]
+
 [node name="Node2D" type="Node2D" unique_id=1085568832]
+script = ExtResource("1_0bu10")
 
 [node name="CocinaSktV01" type="Sprite2D" parent="." unique_id=1846527680]
 position = Vector2(960, 540)
@@ -103,12 +107,20 @@ theme_override_fonts/font = ExtResource("6_0bu10")
 theme_override_font_sizes/font_size = 30
 
 [node name="sotanoRoom" type="Area2D" parent="." unique_id=1836212197]
-position = Vector2(1685, 497)
+position = Vector2(1685, -180)
 script = ExtResource("6_hq138")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sotanoRoom" unique_id=1744857081]
 scale = Vector2(12.898143, 12.898143)
 shape = SubResource("CircleShape2D_bghhj")
+
+[node name="cantGoBasement" type="Area2D" parent="." unique_id=2096633174]
+position = Vector2(1688.9999, 489.99997)
+scale = Vector2(1.3544545, 1.3544545)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cantGoBasement" unique_id=1345102111]
+scale = Vector2(10.11198, 10.11198)
+shape = SubResource("CircleShape2D_jsphu")
 
 [connection signal="body_entered" from="juego parchear" to="CharacterBody2D" method="_on_juego_parchear_body_entered"]
 [connection signal="body_exited" from="juego parchear" to="CharacterBody2D" method="_on_juego_parchear_body_exited"]
@@ -116,3 +128,5 @@ shape = SubResource("CircleShape2D_bghhj")
 [connection signal="body_exited" from="backToLivingRoom" to="CharacterBody2D" method="_on_back_to_living_room_body_exited"]
 [connection signal="body_entered" from="sotanoRoom" to="CharacterBody2D" method="_on_sotano_room_body_entered"]
 [connection signal="body_exited" from="sotanoRoom" to="CharacterBody2D" method="_on_sotano_room_body_exited"]
+[connection signal="body_entered" from="cantGoBasement" to="CharacterBody2D" method="_on_cant_go_basement_body_entered"]
+[connection signal="body_exited" from="cantGoBasement" to="CharacterBody2D" method="_on_cant_go_basement_body_exited"]

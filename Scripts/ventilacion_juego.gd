@@ -10,6 +10,7 @@ func _ready() -> void:
 var tornillosSacados = 0
 
 var escape = false
+var escapePrematuro = false
 
 func _process(_delta: float) -> void:
 	var mouse_pos: Vector2 = get_viewport().get_mouse_position()
@@ -22,6 +23,7 @@ func _process(_delta: float) -> void:
 		$herramientas/picoLoro.global_position = mouse_pos
 	
 	if tornillosSacados >= 4:
+		escapePrematuro = true
 		$VentilacionV01.hide()
 		$Area2D.global_position = Vector2(965, 665)
 		$herramientas.global_position = Vector2(-2000,-2000)
@@ -31,17 +33,20 @@ func _process(_delta: float) -> void:
 			francesa = false
 			picoLoro = false
 	
+	if escapePrematuro:
+		$Area2D.global_position = Vector2(965, 665)
 
 func _input(event):
 	var mouse_pos: Vector2 = get_viewport().get_mouse_position()
 	
 	if escape:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			if $Area2D.is_in_group("escape"):
-				var rect: Rect2 = $Area2D.get_rect()
-				var local_mouse_pos: Vector2 = $Area2D.to_local($Area2D.global_position + (mouse_pos - $Area2D.global_position))
+			if $ParedVentilacion.is_in_group("escape"):
+				var rect: Rect2 = $ParedVentilacion.get_rect()
+				var local_mouse_pos: Vector2 = $ParedVentilacion.to_local($ParedVentilacion.global_position + (mouse_pos - $ParedVentilacion.global_position))
 				if rect.has_point(local_mouse_pos):
 					get_tree().change_scene_to_file("res://Escenas/winEscena.tscn")
+					escape = false
 	
 	if francesa:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
@@ -57,6 +62,7 @@ func _input(event):
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			$herramientas/francesa.global_position = Vector2(341, 69)
 			francesa = false
+
 	
 	if destornillador:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
@@ -81,6 +87,7 @@ func _input(event):
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			$herramientas/destornillador.global_position = Vector2(834, 69)
 			destornillador = false
+
 	
 	if picoLoro:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
@@ -95,6 +102,7 @@ func _input(event):
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			$herramientas/picoLoro.global_position = Vector2(1307, 69)
 			picoLoro = false
+
 	
 
 func _on_francesa_pressed():

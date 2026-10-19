@@ -4,6 +4,7 @@ extends Node2D
 @onready var label = $Label
 
 func _ready():
+	GlobalInteractuable.etapaSecuestro = true
 	iniciar_dialogo()
 
 func escribir_texto(texto_completo: String, duracion: float):

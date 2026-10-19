@@ -31,7 +31,7 @@ position = Vector2(961, 542)
 scale = Vector2(0.8536704, 0.8548969)
 texture = ExtResource("3_0fghl")
 
-[node name="ParedVentilacion" type="Sprite2D" parent="." unique_id=1808405216]
+[node name="ParedVentilacion" type="Sprite2D" parent="." unique_id=1808405216 groups=["escape"]]
 position = Vector2(965.00006, 692.4526)
 scale = Vector2(0.43415406, 0.43415406)
 texture = ExtResource("4_up8nc")
@@ -111,8 +111,8 @@ rotation = -3.1415925
 scale = Vector2(0.3832827, 0.3832827)
 texture = ExtResource("12_naos4")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=641938138 groups=["escape"]]
-position = Vector2(965, 665)
+[node name="Area2D" type="Area2D" parent="." unique_id=641938138]
+position = Vector2(2521, 665)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1893297833]
 scale = Vector2(53.64637, 28.763672)
