@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://8dnpjy521828" path="res://Scripts/acceso_cocina.gd" id="6_rftcv"]
 [ext_resource type="PackedScene" uid="uid://c48ih677og32b" path="res://Escenas/assassin.tscn" id="8_lxna7"]
 [ext_resource type="Texture2D" uid="uid://cyrpmtu8upr86" path="res://assets/Backround/SALON/SALON_ASSET_FINAL.png" id="9_3sxku"]
+[ext_resource type="Texture2D" uid="uid://dfdwwm3s57plu" path="res://assets/flecha.png" id="10_3sxku"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 radius = 96.25487
@@ -26,6 +27,18 @@ texture = ExtResource("2_frm4x")
 metadata/_edit_lock_ = true
 
 [node name="pause_menu" parent="." unique_id=1526808940 instance=ExtResource("2_l6tan")]
+
+[node name="Flecha" type="Sprite2D" parent="." unique_id=1899426007]
+position = Vector2(308, 570)
+rotation = 2.5840836
+scale = Vector2(0.09480358, 0.09480358)
+texture = ExtResource("10_3sxku")
+
+[node name="Flecha2" type="Sprite2D" parent="." unique_id=2116571097]
+position = Vector2(1542.9999, 484)
+rotation = -2.6478956
+scale = Vector2(0.094803594, 0.094803594)
+texture = ExtResource("10_3sxku")
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("2_mooak")]
 process_mode = 1

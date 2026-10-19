@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://du1wr5o7s1ghp" path="res://Scripts/etapa_secuestro.gd" id="9_icenn"]
 [ext_resource type="AudioStream" uid="uid://c8nqm0jlx8ej3" path="res://Sonidos/luzParpadeante.ogg" id="10_0spo4"]
 [ext_resource type="Script" uid="uid://b3hdcddy1txj1" path="res://Scripts/quitar_lavaropa.gd" id="12_08k4l"]
+[ext_resource type="Texture2D" uid="uid://dfdwwm3s57plu" path="res://assets/flecha.png" id="13_08k4l"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_in5sg"]
 
@@ -35,6 +36,12 @@ metadata/_edit_lock_ = true
 
 [node name="SotanoAsset" parent="." unique_id=370279078 instance=ExtResource("3_xm06p")]
 position = Vector2(962, 538)
+
+[node name="Flecha" type="Sprite2D" parent="." unique_id=1196822303]
+position = Vector2(1065, 186)
+rotation = 2.5648196
+scale = Vector2(0.09480359, 0.09480359)
+texture = ExtResource("13_08k4l")
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_fw0b8")]
 position = Vector2(1320, 447)

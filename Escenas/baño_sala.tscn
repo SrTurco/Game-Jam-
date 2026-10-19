@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="5_544ki"]
 [ext_resource type="FontFile" uid="uid://bvcjpp5q1mxo4" path="res://font/font/Roboto-BlackItalic.ttf" id="5_velbf"]
 [ext_resource type="Script" uid="uid://dfuuvv8kwu6tr" path="res://Scripts/back_to_living_room.gd" id="6_q3s06"]
+[ext_resource type="Texture2D" uid="uid://dfdwwm3s57plu" path="res://assets/flecha.png" id="8_03wrp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44saq"]
 
@@ -21,6 +22,12 @@ script = ExtResource("1_ytnfl")
 position = Vector2(960, 540)
 texture = ExtResource("3_uym0p")
 metadata/_edit_lock_ = true
+
+[node name="Flecha" type="Sprite2D" parent="." unique_id=1720462288]
+position = Vector2(1606.9999, 979.99994)
+rotation = -1.0588925
+scale = Vector2(0.09480359, 0.09480359)
+texture = ExtResource("8_03wrp")
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_mcjmb")]
 position = Vector2(1433, 898)

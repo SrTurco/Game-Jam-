@@ -6,6 +6,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_hp7a8"]
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1832520959]
 script = ExtResource("1_i8vih")
 
@@ -21,3 +23,6 @@ texture = ExtResource("2_i8vih")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1030227727]
 stream = ExtResource("3_qgqwx")
 volume_db = -10.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=469659868]
+sprite_frames = SubResource("SpriteFrames_hp7a8")
