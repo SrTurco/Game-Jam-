@@ -4,6 +4,7 @@
 [ext_resource type="VideoStream" uid="uid://cboyb5dnqvead" path="res://assets/win.ogv" id="1_thuo2"]
 [ext_resource type="Texture2D" uid="uid://cf5ifodgvogop" path="res://assets/botones/boton MAIN MENU.png" id="3_e7shb"]
 [ext_resource type="Texture2D" uid="uid://bfdp27c7jklhm" path="res://assets/botones/boton EXIT.png" id="4_l56q8"]
+[ext_resource type="AudioStream" uid="uid://b4qt4cy3jdaqx" path="res://Sonidos/policiaSIrena.ogg" id="5_e7shb"]
 
 [node name="Node2D" type="Node2D" unique_id=1798910862]
 script = ExtResource("1_aws18")
@@ -30,6 +31,11 @@ offset_right = 2028.0
 offset_bottom = 1340.0
 scale = Vector2(0.3204821, 0.3204821)
 texture_normal = ExtResource("4_l56q8")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=35150561]
+stream = ExtResource("5_e7shb")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://v5cu1276vqab" path="res://icon.svg" id="2_qncgo"]
 [ext_resource type="Texture2D" uid="uid://bfdp27c7jklhm" path="res://assets/botones/boton EXIT.png" id="4_d8lex"]
 [ext_resource type="VideoStream" uid="uid://b273l13khx04p" path="res://assets/Meu-de-inicio.ogv" id="5_d8lex"]
+[ext_resource type="AudioStream" uid="uid://debj8fy72o6og" path="res://Sonidos/musicaMenu.ogg" id="6_yo4kt"]
 
 [node name="MenuPrincipal" type="Node2D" unique_id=860538185]
 script = ExtResource("1_ft1ng")
@@ -38,6 +39,11 @@ offset_right = 1800.0
 offset_bottom = 1318.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("4_d8lex")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=411175597]
+stream = ExtResource("6_yo4kt")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]

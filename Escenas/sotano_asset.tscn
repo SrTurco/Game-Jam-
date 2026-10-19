@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://sy6661m748v5"]
+
+[ext_resource type="Texture2D" uid="uid://dgte05ok7mmj7" path="res://assets/Backround/sotano/SOTANO_ASSET.png" id="1_7fmuc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44saq"]
+
+[node name="SotanoAsset" type="Sprite2D" unique_id=370279078]
+texture = ExtResource("1_7fmuc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1870341071]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1398345077]
+position = Vector2(656.00006, -60.999996)
+scale = Vector2(7.702095, 7.702095)
+shape = SubResource("RectangleShape2D_44saq")

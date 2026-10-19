@@ -4,11 +4,14 @@
 [ext_resource type="Script" uid="uid://tm5bn1rofnjy" path="res://Scripts/sotano_sala.gd" id="1_qi6ja"]
 [ext_resource type="Texture2D" uid="uid://daifhi0gwjd4p" path="res://assets/Backround/SOTANOBG_FINAL.png" id="1_vljhc"]
 [ext_resource type="PackedScene" uid="uid://v8u575s5x4le" path="res://Escenas/ventilacion_juego.tscn" id="3_vljhc"]
+[ext_resource type="PackedScene" uid="uid://sy6661m748v5" path="res://Escenas/sotano_asset.tscn" id="3_xm06p"]
 [ext_resource type="Script" uid="uid://cnrey642ho20r" path="res://Scripts/laberintojuego.gd" id="5_e10ms"]
 [ext_resource type="FontFile" uid="uid://bmpyecw0tqea2" path="res://font/font/Roboto-Italic.ttf" id="5_vljhc"]
 [ext_resource type="PackedScene" uid="uid://dcks21ee56j77" path="res://Escenas/laberinto.tscn" id="6_e10ms"]
 [ext_resource type="Script" uid="uid://clh6os6wte21e" path="res://Scripts/accesoVentilacion.gd" id="8_6q2ba"]
 [ext_resource type="Script" uid="uid://du1wr5o7s1ghp" path="res://Scripts/etapa_secuestro.gd" id="9_icenn"]
+[ext_resource type="AudioStream" uid="uid://c8nqm0jlx8ej3" path="res://Sonidos/luzParpadeante.ogg" id="10_0spo4"]
+[ext_resource type="Script" uid="uid://b3hdcddy1txj1" path="res://Scripts/quitar_lavaropa.gd" id="12_08k4l"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_in5sg"]
 
@@ -20,6 +23,8 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jsphu"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ony7f"]
+
 [node name="Node2D" type="Node2D" unique_id=1085568832]
 script = ExtResource("1_qi6ja")
 
@@ -27,6 +32,9 @@ script = ExtResource("1_qi6ja")
 position = Vector2(960, 540)
 texture = ExtResource("1_vljhc")
 metadata/_edit_lock_ = true
+
+[node name="SotanoAsset" parent="." unique_id=370279078 instance=ExtResource("3_xm06p")]
+position = Vector2(962, 538)
 
 [node name="CharacterBody2D" parent="." unique_id=1832520959 instance=ExtResource("1_fw0b8")]
 position = Vector2(1320, 447)
@@ -141,11 +149,11 @@ shape = SubResource("CircleShape2D_44saq")
 [node name="laberinto" parent="." unique_id=871257911 instance=ExtResource("6_e10ms")]
 position = Vector2(-2108, 0)
 
-[node name="Area2D" type="Area2D" parent="." unique_id=200671143]
+[node name="ventilacionJuego" type="Area2D" parent="." unique_id=200671143]
 position = Vector2(2183, 469)
 script = ExtResource("8_6q2ba")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1091970016]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ventilacionJuego" unique_id=1091970016]
 scale = Vector2(-13.782434, -13.782434)
 shape = SubResource("CircleShape2D_bghhj")
 
@@ -165,13 +173,30 @@ rotation = 0.05605738
 scale = Vector2(10.834901, 10.834901)
 shape = SubResource("CircleShape2D_jsphu")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1419299619]
+position = Vector2(1344, 122)
+stream = ExtResource("10_0spo4")
+volume_db = -10.0
+autoplay = true
+
+[node name="quitarLavaropa" type="Area2D" parent="." unique_id=1650016688]
+position = Vector2(1603, -216)
+scale = Vector2(1.3454015, 1.3454015)
+script = ExtResource("12_08k4l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="quitarLavaropa" unique_id=1467243774]
+scale = Vector2(13.514572, 13.514572)
+shape = SubResource("CircleShape2D_ony7f")
+
 [connection signal="body_entered" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_entered"]
 [connection signal="body_exited" from="BackToKitchen" to="CharacterBody2D" method="_on_acceso_cocina_body_exited"]
 [connection signal="body_entered" from="laberintojuego" to="CharacterBody2D" method="_on_laberintojuego_body_entered"]
 [connection signal="body_exited" from="laberintojuego" to="CharacterBody2D" method="_on_laberintojuego_body_exited"]
-[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="ventilacionJuego" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="ventilacionJuego" to="CharacterBody2D" method="_on_area_2d_body_exited"]
 [connection signal="timeout" from="TimerEscape" to="." method="_on_timer_escape_timeout"]
 [connection signal="timeout" from="TimerAyuda" to="." method="_on_timer_ayuda_timeout"]
 [connection signal="body_entered" from="etapaSecuestro" to="CharacterBody2D" method="_on_etapa_secuestro_body_entered"]
 [connection signal="body_exited" from="etapaSecuestro" to="CharacterBody2D" method="_on_etapa_secuestro_body_exited"]
+[connection signal="body_entered" from="quitarLavaropa" to="CharacterBody2D" method="_on_quitar_lavaropa_body_entered"]
+[connection signal="body_exited" from="quitarLavaropa" to="CharacterBody2D" method="_on_quitar_lavaropa_body_exited"]

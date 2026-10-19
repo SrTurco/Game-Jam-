@@ -4,9 +4,9 @@ func _ready():
 	if GlobalInteractuable.etapaSecuestro and GlobalInteractuable.bañoMinijuego and GlobalInteractuable.cocinaMinijuego and GlobalInteractuable.laberintoMinijuego:
 		$laberintojuego.global_position = Vector2(-1000, -1000)
 		$BackToKitchen.global_position = Vector2(-1000, -1000)
+		$quitarLavaropa.global_position = Vector2(1603, 482)
 		$TimerEscape.start()
 		$TimerAyuda.start()
-		$Area2D.global_position = Vector2(1635, 470)
 
 func _on_timer_ayuda_timeout():
 	$Label.text = "Press O for help"

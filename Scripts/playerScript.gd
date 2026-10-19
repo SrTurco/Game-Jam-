@@ -24,9 +24,6 @@ func _process(_delta: float) -> void:
 	playerPosition = self.global_position
 	
 	if objeto_actual != null and Input.is_action_just_pressed("interactuar"):
-		if objeto_actual.name == "acceso_cocina" and GlobalInteractuable.etapaSecuestro:
-			
-			pass
 		objeto_actual.accionar()
 		print("accionado")
 	
@@ -37,9 +34,11 @@ func _physics_process(_delta):
 	if direccion:
 		velocity.x = direccion.x * SPEED 
 		velocity.y = direccion.y * SPEED 
+		$AudioStreamPlayer2D.play()
 	else:
 		velocity.x = move_toward(velocity.x, 0 , SPEED)
 		velocity.y = move_toward(velocity.y , 0 , SPEED)
+		$AudioStreamPlayer2D.stop()
 		
 	move_and_slide()
 
@@ -113,7 +112,7 @@ func _on_laberintojuego_body_exited(_body: CharacterBody2D):
 func _on_area_2d_body_entered(_body: CharacterBody2D):
 	label.text = "Press E to interact"
 	label.show()
-	interactuable($"../Area2D")
+	interactuable($"../ventilacionJuego")
 	
 func _on_area_2d_body_exited(_body: CharacterBody2D):
 	label.hide()
@@ -134,3 +133,13 @@ func _on_cant_go_basement_body_entered(_body: CharacterBody2D):
 
 func _on_cant_go_basement_body_exited(_body: CharacterBody2D):
 	label.hide()
+
+func _on_quitar_lavaropa_body_entered(_body: CharacterBody2D):
+	label.text = "Press E to Interact"
+	label.show()
+	interactuable($"../quitarLavaropa")
+	
+func _on_quitar_lavaropa_body_exited(_body: CharacterBody2D):
+	label.hide()
+	objeto_actual = null
+	

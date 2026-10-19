@@ -46,7 +46,7 @@ func iniciar_dialogo():
 	I really need to be going, sir.", 2.0)
 	await get_tree().create_timer(5.0).timeout
 	label.add_theme_color_override("font_color", Color.DARK_RED)
-	await escribir_texto("Client: (Pulling out a weapon or a heavy tool)
+	await escribir_texto("Client: (Pulling out a weapon)
 	Oh, you’re not going anywhere.
 	You see, you’ve fixed the water pipes...
 	but now you’re going to help me test 
